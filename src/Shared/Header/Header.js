@@ -31,32 +31,29 @@ const Header = () => {
                 <li>
                   <Link>Home</Link>
                 </li>
-            
-                 <li>
-                 <Link to='about' className="justify-between">
-                   About
-               
-                 
-                  </Link>
-                 </li>
-                  
-                    <li>
-                      <Link to='/appointment'>Appointment</Link>
-                    </li>
-                    <li>
-                      <Link to='/reviews'>Reviews</Link>
-                    </li>
-                  
-               
+
                 <li>
-                  <Link to='/contactUs'>Contact Us</Link>
+                  <Link to="about" className="justify-between">
+                    About
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/appointment">Appointment</Link>
                 </li>
                 <li>
-                  <Link to='/login'>Login</Link>
+                  <Link to="/reviews">Reviews</Link>
+                </li>
+
+                <li>
+                  <Link to="/contactUs">Contact Us</Link>
+                </li>
+                <li>
+                  <Link to="/login">Login</Link>
                 </li>
               </ul>
             </div>
-            <Link to='/' className=" normal-case text-lg">
+            <Link to="/" className=" normal-case text-lg">
               Doctors Portal
             </Link>
           </div>
@@ -64,19 +61,19 @@ const Header = () => {
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal p-0 ">
               <li className=" hover:bg-accent hover:text-white">
-                <Link to='/about' >About</Link>
+                <Link to="/about">About</Link>
               </li>
-              <li tabIndex={0} className= 'hover:bg-accent hover:text-white'>
-                <Link to='/appointment'>Appointment</Link>
-              </li>
-              <li className=" hover:bg-accent hover:text-white">
-                <Link to='/reviews'>Reviews</Link>
+              <li tabIndex={0} className="hover:bg-accent hover:text-white">
+                <Link to="/appointment">Appointment</Link>
               </li>
               <li className=" hover:bg-accent hover:text-white">
-                <Link to='/contactUs'>Contact Us</Link>
+                <Link to="/reviews">Reviews</Link>
               </li>
-              <li className=" hover:bg-accent hover:text-white" >
-                <Link to='login'>Login</Link>
+              <li className=" hover:bg-accent hover:text-white">
+                <Link to="/contactUs">Contact Us</Link>
+              </li>
+              <li className=" hover:bg-accent hover:text-white">
+                <Link to="login">Login</Link>
               </li>
             </ul>
           </div>

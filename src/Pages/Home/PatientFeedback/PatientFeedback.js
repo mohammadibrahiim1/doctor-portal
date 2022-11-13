@@ -36,7 +36,7 @@ const PatientFeedback = () => {
    <div className="flex justify-between items-center w-11/12 mx-auto mt-14" >
          
    <div className="text-start">
-        <h2 className="text-primary font-bold">Testimonial</h2>
+        <h2 className="text-primary font-bold">Testimonials</h2>
         <p className="text-accent pt-1">What Our Patients Says</p>
       </div>
 

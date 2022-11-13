@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div>
       <div className="mx-5 bg-[url('https://i.ibb.co/KWdnryZ/landing-bg.png')] bg-cover">
-        <div className="hero min-h-[838px] max-w-[1363px] mx-auto">
+        <div className="hero min-h-[700px] max-w-[1363px] mx-auto">
           <div className="hero-content flex-col lg:flex-row-reverse">
             <img
               src="https://i.ibb.co/v4zhwnG/chair-1.png"

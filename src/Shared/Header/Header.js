@@ -62,20 +62,20 @@ const Header = () => {
           </div>
 
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal p-0">
-              <li>
+            <ul className="menu menu-horizontal p-0 ">
+              <li className=" hover:bg-accent hover:text-white">
                 <Link to='/about' >About</Link>
               </li>
-              <li tabIndex={0}>
+              <li tabIndex={0} className= 'hover:bg-accent hover:text-white'>
                 <Link to='/appointment'>Appointment</Link>
               </li>
-              <li>
+              <li className=" hover:bg-accent hover:text-white">
                 <Link to='/reviews'>Reviews</Link>
               </li>
-              <li>
+              <li className=" hover:bg-accent hover:text-white">
                 <Link to='/contactUs'>Contact Us</Link>
               </li>
-              <li>
+              <li className=" hover:bg-accent hover:text-white" >
                 <Link to='login'>Login</Link>
               </li>
             </ul>

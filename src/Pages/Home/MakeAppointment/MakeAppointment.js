@@ -28,7 +28,7 @@ const MakeAppointment = () => {
                 here, content here', making it look like readable English. Many
                 desktop publishing packages and web page
               </p>
-              <button className="btn btn-primary text-white">
+              <button className="btn btn-primary text-white bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary">
                 Get Started
               </button>
             </div>

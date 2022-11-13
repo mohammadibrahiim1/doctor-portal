@@ -37,7 +37,7 @@ const ContactUs = () => {
             <textarea name="message" id="" cols="30" rows="10" className=' text-xs pt-2 input input-bordered' placeholder='your message'></textarea>
         </div>
         <div className="form-control ">
-          <button className="btn btn-primary text-white font-bold w-1/2 mx-auto mt-1">submit</button>
+          <button className="btn btn-primary text-white font-bold w-1/2 mx-auto mt-1 bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary">submit</button>
         </div>
       </div>
     </div>

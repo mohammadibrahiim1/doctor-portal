@@ -41,7 +41,7 @@ const PatientFeedback = () => {
       </div>
 
       <div>
-         <img src="https://i.ibb.co/4gbvjcr/Mask-Group-7-2x-1.png" alt="" srcset="" />
+         <img src="https://i.ibb.co/4gbvjcr/Mask-Group-7-2x-1.png" alt="" srcset="" style={{height:'156px',width:'192px'}} />
       </div>
    </div>
 

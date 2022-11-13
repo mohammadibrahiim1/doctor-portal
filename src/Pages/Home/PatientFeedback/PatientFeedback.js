@@ -33,7 +33,7 @@ const PatientFeedback = () => {
   return (
     <div>
 
-   <div className="flex justify-between items-center w-11/12 mx-auto mt-10" >
+   <div className="flex justify-between items-center w-11/12 mx-auto mt-14" >
          
    <div className="text-start">
         <h2 className="text-primary font-bold">Testimonial</h2>

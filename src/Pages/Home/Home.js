@@ -1,4 +1,5 @@
 import React from "react";
+import ContactUs from "./Contactus/ContactUs";
 import MakeAppointment from "./MakeAppointment/MakeAppointment";
 import PatientFeedback from "./PatientFeedback/PatientFeedback";
 import Services from "./Services/Services";
@@ -117,6 +118,7 @@ const Home = () => {
       <Services></Services>
       <MakeAppointment></MakeAppointment>
       <PatientFeedback></PatientFeedback>
+      <ContactUs></ContactUs>
     </div>
   );
 };

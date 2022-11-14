@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  console.log( 7 > 6 && 8 < 6 && 6 > 4 )
-  const {a, b} = {x:2, y:3}
-  console.log(b);
+
     return (
     
           <section>

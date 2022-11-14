@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
+import AppointmentModal from "../AppointmentModal/AppointmentModal";
 import AppointmentOption from "../AppointmentOption/AppointmentOption";
 
-const AvailableAppointments = () => {
+const AvailableAppointments = ({ selectedDate }) => {
+  console.log(selectedDate);
   const [appointments, setAppointments] = useState([]);
+  const [treatMent, setTreatMent] = useState({});
 
   useEffect(() => {
     fetch("appointment.json")
@@ -20,9 +23,18 @@ const AvailableAppointments = () => {
           <AppointmentOption
             key={appointment.id}
             appointment={appointment}
+            setTreatMent={setTreatMent}
           ></AppointmentOption>
         ))}
       </div>
+
+      {treatMent && (
+        <AppointmentModal
+          treatMent={treatMent}
+          selectedDate={selectedDate}
+          setTreatMent={setTreatMent}
+        ></AppointmentModal>
+      )}
     </div>
   );
 };

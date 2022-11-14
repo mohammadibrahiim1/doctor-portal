@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { DayPicker } from "react-day-picker";
 import { format } from "date-fns";
 
-const AppointMentBanner = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
+const AppointMentBanner = ({selectedDate,setSelectedDate}) => {
+
   return (
     <div>
       <div

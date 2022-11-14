@@ -1,6 +1,7 @@
 import React from "react";
 
-const AppointmentOption = ({ appointment }) => {
+const AppointmentOption = ({ appointment,setTreatMent }) => {
+
   console.log(appointment);
   const { name, slots } = appointment;
   return (
@@ -21,12 +22,13 @@ const AppointmentOption = ({ appointment }) => {
           </p>
         </div>
         <div className="card-actions justify-end">
-          <button
-            className=" btn-primary border rounded text-[14px] bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white  mx-auto"
+          <label
+          onClick={()=>setTreatMent(appointment)}
+            className=" text-center pt-2 border rounded text-[14px] bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white  mx-auto cursor-pointer"  htmlFor="booking-modal" 
             style={{ width: "190px", height: "2.2rem" }}
           >
             Book Appointment
-          </button>
+          </label> 
         </div>
       </div>
     </div>

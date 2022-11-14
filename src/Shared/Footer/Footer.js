@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  console.log( 7 > 6 && 8 < 6 && 6 > 4 )
+  const {a, b} = {x:2, y:3}
+  console.log(b);
     return (
     
           <section>
 
 
-            <footer className=" p-10 text-base-content   bg-[url('https://i.ibb.co/3kGk9w1/footer-bg-1-1-1.png')] bg-cover" style={{height:'407px',width:'1441px'}}>
+            <footer className=" p-10 text-base-content mt-12  bg-[url('https://i.ibb.co/3kGk9w1/footer-bg-1-1-1.png')] bg-cover" style={{height:'407px',width:'1441px'}}>
 
 <div className='flex justify-between  mx-auto '>
 <div>
@@ -40,6 +43,8 @@ const Footer = () => {
   </div>
 
 </div>
+
+
 
 
 

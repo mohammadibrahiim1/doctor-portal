@@ -3,34 +3,36 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="hero" style={{marginTop:'150px',marginBottom:'100px'}}>
-           
+    <div className="hero" style={{ marginTop: "150px", marginBottom: "100px" }}>
       <div className="hero-content flex-col lg:flex-row-reverse">
-  
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-      
+          <p className="text-center text-xs text-secondary relative top-5 ">Login!</p>
           <div
             className="card-body"
-            style={{ width: "385px", height: "540px" }}
+            style={{ width: "385px", height: "520px" }}
           >
-             
-           
             <div className="form-control">
-            <p className="text-center text-xs text-secondary">Login!</p>
               <label className="label">
-                <span className="label-text" style={{fontSize:'14px'}}>Email</span>
+                <span className="label-text" style={{ fontSize: "14px" }}>
+                  Email
+                </span>
               </label>
-              <input 
+              <input
                 placeholder="email"
                 className="input input-sm w-full input-bordered text-xs"
               />
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text text-xs" style={{fontSize:'14px'}}>Password</span>
+                <span
+                  className="label-text text-xs"
+                  style={{ fontSize: "14px" }}
+                >
+                  Password
+                </span>
               </label>
               <input
-              style={{fontSize:'14px'}}
+                style={{ fontSize: "14px" }}
                 type="text"
                 placeholder="password"
                 className="input input-sm w-full input-bordered text-xs"
@@ -39,7 +41,7 @@ const Login = () => {
                 <Link
                   to="#"
                   className="label-text-alt link link-hover text-primary"
-                  style={{fontSize:'14px'}}
+                  style={{ fontSize: "14px" }}
                 >
                   Forgot password?
                 </Link>
@@ -56,7 +58,7 @@ const Login = () => {
             <div>
               <p className="text-accent" style={{ fontSize: "12px" }}>
                 new to doctors portal?{" "}
-                <Link to="/">
+                <Link to="/signup">
                   {" "}
                   <span className="text-primary hover:text-accent">
                     create new account
@@ -65,13 +67,26 @@ const Login = () => {
               </p>
             </div>
             <div className="flex flex-col w-full">
-              <div className="divider" style={{fontSize:'14px',marginTop:"0.3rem",marginBottom:'0.3rem'}}>OR</div>
+              <div
+                className="divider"
+                style={{
+                  fontSize: "14px",
+                  marginTop: "0.3rem",
+                  marginBottom: "0.3rem",
+                }}
+              >
+                OR
+              </div>
             </div>
-           
-            <div className="form-control">
-          <button className="border rounded text-xs hover:bg-accent hover:text-white uppercase" style={{ width: "290px", height: "2.2rem" ,fontSize:'14px' }}>continue with google</button>
-        </div>
 
+            <div className="form-control">
+              <button
+                className="border rounded text-xs hover:bg-accent hover:text-white uppercase"
+                style={{ width: "290px", height: "2.2rem", fontSize: "14px" }}
+              >
+                continue with google
+              </button>
+            </div>
           </div>
         </div>
       </div>

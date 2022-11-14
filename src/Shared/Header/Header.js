@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './Header.css'
 
 const Header = () => {
   return (
     <div>
       <section>
-        <div className="navbar bg-base-100">
+        <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
-              <label tabIndex={0} className="btn btn-ghost lg:hidden">
+              <label tabIndex={0} className=" btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -26,10 +27,10 @@ const Header = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 bg-white"
               >
                 <li>
-                  <Link>Home</Link>
+                  <Link to='/'>Home</Link>
                 </li>
 
                 <li>
@@ -53,26 +54,30 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <Link to="/" className=" normal-case text-lg">
+            <Link to="/" className=" normal-case text-lg  hover:text-secondary" style={{fontSize:'18px'}}>
               Doctors Portal
             </Link>
           </div>
 
-          <div className="navbar-center hidden lg:flex">
+          <div className="navbar-center hidden lg:flex" style={{fontSize:'18px'}}>
+         
             <ul className="menu menu-horizontal p-0 ">
-              <li className=" hover:bg-accent hover:text-white">
+              <li className="hover:text-secondary">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="  hover:text-secondary">
                 <Link to="/about">About</Link>
               </li>
-              <li tabIndex={0} className="hover:bg-accent hover:text-white">
+              <li tabIndex={0} className=" hover:text-secondary">
                 <Link to="/appointment">Appointment</Link>
               </li>
-              <li className=" hover:bg-accent hover:text-white">
+              <li className=" hover:text-secondary">
                 <Link to="/reviews">Reviews</Link>
               </li>
-              <li className=" hover:bg-accent hover:text-white">
+              <li className=" hover:text-secondary">
                 <Link to="/contactUs">Contact Us</Link>
               </li>
-              <li className=" hover:bg-accent hover:text-white">
+              <li className=" hover:text-secondary">
                 <Link to="login">Login</Link>
               </li>
             </ul>

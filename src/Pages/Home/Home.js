@@ -19,7 +19,7 @@ const Home = () => {
               <h1 className="text-4xl font-extrabold text-[#3A4256]">
                 Your New Smile Starts Here
               </h1>
-              <p className="py-5 text-xs  ">
+              <p className="py-5 text-xs px-3  ">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the

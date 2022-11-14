@@ -9,8 +9,9 @@ const Signup = () => {
         style={{ marginTop: "150px", marginBottom: "100px" }}
       >
         <div className="hero-content flex-col lg:flex-row-reverse">
-        <p className="text-center text-xs text-secondary">Sign Up! </p>
+        
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <p className="text-center text-xs text-secondary relative top-5">Sign Up! </p>
             <div
               className="card-body"
               style={{ width: "385px", height: "556px" }}
@@ -73,7 +74,7 @@ const Signup = () => {
                   className=" btn-primary rounded text-white text-xs bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary"
                   style={{ width: "290px", height: "2.2rem" }}
                 >
-                  Login
+                 Sign Up
                 </button>
               </div>
               <div>

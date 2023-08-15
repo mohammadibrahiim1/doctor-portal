@@ -1,7 +1,9 @@
 import React from "react";
 import Feedback from "../Feedback/Feedback";
 
-{/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/4gbvjcr/Mask-Group-7-2x-1.png" alt="Mask-Group-7-2x-1" border="0"></a> */}
+{
+  /* <a href="https://imgbb.com/"><img src="https://i.ibb.co/4gbvjcr/Mask-Group-7-2x-1.png" alt="Mask-Group-7-2x-1" border="0"></a> */
+}
 
 const PatientFeedback = () => {
   const patientFeedbacks = [
@@ -32,18 +34,21 @@ const PatientFeedback = () => {
   ];
   return (
     <div>
+      <div className="flex justify-between items-center w-11/12 mx-auto mt-14">
+        <div className="text-start">
+          <h2 className="text-primary font-bold">Testimonials</h2>
+          <p className="text-accent pt-1">What Our Patients Says</p>
+        </div>
 
-   <div className="flex justify-between items-center w-11/12 mx-auto mt-14" >
-         
-   <div className="text-start">
-        <h2 className="text-primary font-bold">Testimonials</h2>
-        <p className="text-accent pt-1">What Our Patients Says</p>
+        <div>
+          <img
+            src="https://i.ibb.co/4gbvjcr/Mask-Group-7-2x-1.png"
+            alt=""
+            srcSet=""
+            style={{ height: "156px", width: "192px" }}
+          />
+        </div>
       </div>
-
-      <div>
-         <img src="https://i.ibb.co/4gbvjcr/Mask-Group-7-2x-1.png" alt="" srcset="" style={{height:'156px',width:'192px'}} />
-      </div>
-   </div>
 
       <div
         style={{ width: "1333px", height: "514px" }}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "service_name": "Angioplasty",
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily."
+  },
+  {
+    "id": 2,
+    "service_name": "Cardiology",
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily."
+  },
+  {
+    "id": 3,
+    "service_name": "Dental",
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily.",
+    "image": "https://i.ibb.co/SfS541t/Photo-6.png"
+  },
+  {
+    "id": 4,
+    "service_name": "Eye Care",
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily.",
+    "image": "https://i.ibb.co/dk3kdz2/Photo-5.png"
+  },
+  {
+    "id": 5,
+    "service_name": "Endocrinology",
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily."
+  },
+  {
+    "id": 6,
+    "service_name": "Orthopaedics",
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily."
+  }
+]

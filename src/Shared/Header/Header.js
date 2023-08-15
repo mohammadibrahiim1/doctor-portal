@@ -47,7 +47,7 @@ const Header = () => {
                   <Link to="/appointment">Appointment</Link>
                 </li>
                 <li>
-                  <Link to="/contactUs">Contact Us</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -82,12 +82,12 @@ const Header = () => {
                 <Link to="/appointment">Appointment</Link>
               </li>
               <li>
-                <Link to="/contactUs">Contact Us</Link>
+                <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>
           <div className="navbar-end">
-            <Link to="/login" className="btn btn-sm">
+            <Link to="/login" className="btn btn-secondary px-8">
               Login
             </Link>
             {/* <Link className="btn">Button</Link> */}

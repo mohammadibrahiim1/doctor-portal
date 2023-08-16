@@ -4,7 +4,7 @@ import "./HomePageHeader.css";
 const HomePageHeader = () => {
   return (
     <div>
-      <section className="home_page_header  ">
+      <section className="home_page_header">
         <div>
           <div className="hero">
             <div className="hero-content flex-col lg:flex-row-reverse">

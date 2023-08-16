@@ -22,6 +22,8 @@
 }
 
 .services_card_container {
+  width: 1200px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-evenly;

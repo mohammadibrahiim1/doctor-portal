@@ -14,7 +14,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="min-h-[1193px] max-w-[1388px] mx-auto mt-[200px] ">
+    <div className=" max-w-[1388px] mx-auto mt-[200px] ">
       <div className="text-center">
         <h2 className="services_title">Services</h2>
         <p className="services_subtitle">Feel Like Home With Best Medical Care</p>

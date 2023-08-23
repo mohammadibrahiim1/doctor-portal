@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // import { FaCapsules } from "react-icons/fa6";
 
 const Service = ({ service }) => {
-  const { icon, image, details, service_name } = service;
+  const { icon,  details, service_name } = service;
 
   return (
     <div>

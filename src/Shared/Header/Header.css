@@ -1,4 +1,23 @@
- .menu:hover{
-    background-color: none !important;
+.menu:hover {
+  background-color: none !important;
+}
+.navbar-end .btn {
+  color: #363636;
+  text-align: right;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 28.8px */
+  border-radius: 0;
+  text-transform: capitalize;
+}
 
+.siteName {
+  color: #1c1c1c;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 105%; /* 31.5px */
 }

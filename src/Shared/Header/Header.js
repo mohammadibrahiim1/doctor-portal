@@ -53,7 +53,7 @@ const Header = () => {
             </div>
             <Link to="/" className="normal-case text-xl">
               <div className="flex justify-center items-center gap-1">
-                <img src="https://i.ibb.co/jRpnpcB/Icon.png" alt="" srcSet="" className="h-10 w-10 " /> <p>Pharma</p>
+                <img src="https://i.ibb.co/jRpnpcB/Icon.png" alt="" srcSet="" className="h-10 w-10  " /> <p className="siteName" >Pharma</p>
               </div>
             </Link>
           </div>
@@ -88,7 +88,7 @@ const Header = () => {
           </div>
           <div className="navbar-end">
             <Link to="/login" className="btn btn-secondary px-8">
-              Login
+              Appointment
             </Link>
             {/* <Link className="btn">Button</Link> */}
           </div>

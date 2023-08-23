@@ -15,9 +15,9 @@ const HomePageHeader = () => {
                 srcSet=""
               />
               <div className="pl-16">
-                <h1 className="text-sm text-primary  font-bold">MEDICAL PROFESSIONALS</h1>
+                <h1 className="text-sm text-primary font-bold">MEDICAL PROFESSIONALS</h1>
                 <h1 className="text-3xl text-[#143450] font-bold">Makes Your Health Better Will Makes Us Better</h1>
-                <p className="py-6 text-sm text-[#1C1C1C]">
+                <p className="py-6 text-sm text-[#1C1C1C] subtitle">
                   Our team of highly trained professionals uses the latest healing technologies to restore you to
                   pain-free health quickly and easily.
                 </p>

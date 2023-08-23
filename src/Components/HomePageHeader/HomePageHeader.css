@@ -2,5 +2,55 @@
   margin-top: 37px;
   height: 561.044px;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
-  background: url(https://i.ibb.co/1mphkDs/Photo-1.png), lightgray 50% / cover no-repeat ;
+  background: url(https://i.ibb.co/1mphkDs/Photo-1.png), lightgray 50% / cover no-repeat;
+}
+.home_page_header .btn {
+  display: flex;
+  padding: 17px 41px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #0152a8;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 0;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.home_page_header .text-primary {
+  color: #1c1c1c;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%; /* 22.72px */
+  letter-spacing: 6.64px;
+  text-transform: uppercase;
+}
+.home_page_header .text-3xl {
+  width: 530.122px;
+  height: 166.379px;
+  color: #143450;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.5%; /* 57.25px */
+}
+.home_page_header .subtitle {
+  width: 430.611px;
+  height: 91.928px;
+  color: #1c1c1c;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%; /* 22.72px */
 }

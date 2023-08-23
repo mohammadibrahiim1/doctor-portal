@@ -1,10 +1,6 @@
 import React from "react";
 import Feedback from "../Feedback/Feedback";
 
-{
-  /* <a href="https://imgbb.com/"><img src="https://i.ibb.co/4gbvjcr/Mask-Group-7-2x-1.png" alt="Mask-Group-7-2x-1" border="0"></a> */
-}
-
 const PatientFeedback = () => {
   const patientFeedbacks = [
     {

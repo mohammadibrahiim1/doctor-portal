@@ -30,19 +30,7 @@ const Header = () => {
                 <li>
                   <Link to="/about">About</Link>
                 </li>
-                {/* <li tabIndex={0}>
-                <details>
-                  <summary>Parent</summary>
-                  <ul className="p-2">
-                    <li>
-                      <Link>Submenu 1</Link>
-                    </li>
-                    <li>
-                      <Link>Submenu 2</Link>
-                    </li>
-                  </ul>
-                </details>
-              </li> */}
+
                 <li>
                   <Link to="/appointment">Appointment</Link>
                 </li>
@@ -53,7 +41,8 @@ const Header = () => {
             </div>
             <Link to="/" className="normal-case text-xl">
               <div className="flex justify-center items-center gap-1">
-                <img src="https://i.ibb.co/jRpnpcB/Icon.png" alt="" srcSet="" className="h-10 w-10  " /> <p className="siteName" >Pharma</p>
+                <img src="https://i.ibb.co/jRpnpcB/Icon.png" alt="" srcSet="" className="h-10 w-10  " />{" "}
+                <p className="siteName">Pharma</p>
               </div>
             </Link>
           </div>
@@ -65,19 +54,7 @@ const Header = () => {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              {/* <li tabIndex={0}>
-                <details>
-                  <summary>Parent</summary>
-                  <ul className="p-2">
-                    <li>
-                      <Link>Submenu 1</Link>
-                    </li>
-                    <li>
-                      <Link>Submenu 2</Link>
-                    </li>
-                  </ul>
-                </details>
-              </li> */}
+
               <li>
                 <Link to="/appointment">Appointment</Link>
               </li>
@@ -90,12 +67,8 @@ const Header = () => {
             <Link to="/login" className="btn btn-secondary px-8">
               Appointment
             </Link>
-            {/* <Link className="btn">Button</Link> */}
           </div>
         </div>
-        {/* https://i.ibb.co/jRpnpcB/Icon.png https://i.ibb.co/SfS541t/Photo-6.png https://i.ibb.co/dk3kdz2/Photo-5.png
-        https://i.ibb.co/2PgJdsQ/Photo-4.png https://i.ibb.co/bgfKQKm/Photo-3.png https://i.ibb.co/Wk83VrS/Photo-2.png
-        https://i.ibb.co/1mphkDs/Photo-1.png https://i.ibb.co/mqswrdc/Photo.png */}
       </section>
     </div>
   );

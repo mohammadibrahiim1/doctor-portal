@@ -1,0 +1,68 @@
+.about_section {
+  margin-top: 37px;
+  height: 561.044px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+  background: url(https://i.ibb.co/7zv2wvd/about-us.png), lightgray 50% / cover no-repeat;
+  background-size: cover;
+}
+
+.about_section .text-sm {
+  color: #1c1c1c;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%; /* 19.88px */
+  letter-spacing: 5.81px;
+  text-transform: uppercase;
+}
+.about_section .text-xs {
+  color: #545454;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%; /* 22.72px */
+}
+.about_section .text-2xl {
+  color: #1c1c1c;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 39px */
+}
+.about_section .container {
+  display: flex;
+  width: 194.872px;
+  align-items: center;
+  gap: 14px;
+}
+.about_section .text {
+  color: #1c1c1c;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 142%; /* 19.88px */
+}
+.about_section .about_container {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+.about_section .btn {
+  display: flex;
+  padding: 17px 41px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #0152a8;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 0;
+  margin-top: 15px;
+}

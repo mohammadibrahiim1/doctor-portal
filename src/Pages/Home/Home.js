@@ -6,6 +6,7 @@ import Services from "./Services/Services";
 import HomePageHeader from "../../Components/HomePageHeader/HomePageHeader";
 import About from "../About/About";
 import ClientLogo from "../../Components/HomePageHeader/ClientLogo/ClientLogo";
+import SpecialCare from "../../Components/SpecialCare/SpecialCare";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Services></Services>
       <About></About>
       <ClientLogo></ClientLogo>
+      <SpecialCare></SpecialCare>
       <MakeAppointment></MakeAppointment>
       <PatientFeedback></PatientFeedback>
       <ContactUs></ContactUs>

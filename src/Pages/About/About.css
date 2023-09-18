@@ -36,7 +36,7 @@
   display: flex;
   width: 194.872px;
   align-items: center;
-  gap: 14px;
+  gap: 1rem;
 }
 .about_section .text {
   color: #1c1c1c;

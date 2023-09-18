@@ -25,46 +25,62 @@ const Header = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link className="font-sans font-semibold" to="/">
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link className="font-sans font-semibold" to="/about">
+                    About
+                  </Link>
                 </li>
 
                 <li>
-                  <Link to="/appointment">Appointment</Link>
+                  <Link className="font-sans font-semibold" to="/appointment">
+                    Appointment
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact Us</Link>
+                  <Link className="font-sans font-semibold" to="/contact">
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>
             <Link to="/" className="normal-case text-xl">
               <div className="flex justify-center items-center gap-1">
                 <img src="https://i.ibb.co/jRpnpcB/Icon.png" alt="" srcSet="" className="h-10 w-10  " />{" "}
-                <p className="siteName">Pharma</p>
+                <p className="siteName font-sans font-semibold">Pharma</p>
               </div>
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 hover:bg-none">
               <li>
-                <Link to="/">Home</Link>
+                <Link className="font-sans font-semibold" to="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link className="font-sans font-semibold" to="/about">
+                  About
+                </Link>
               </li>
 
               <li>
-                <Link to="/appointment">Appointment</Link>
+                <Link className="font-sans font-semibold" to="/appointment">
+                  Appointment
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact Us</Link>
+                <Link className="font-sans font-semibold" to="/contact">
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
           <div className="navbar-end">
-            <Link to="/login" className="btn btn-secondary px-8">
+            <Link to="/login" className="btn btn-secondary px-8 font-sans">
               Appointment
             </Link>
           </div>

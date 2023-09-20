@@ -1,17 +1,17 @@
 .menu:hover {
   background-color: none !important;
 }
-.navbar-end .btn {
+/* .navbar-end .btn {
   color: #363636;
   text-align: right;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 160%; /* 28.8px */
+  line-height: 160%; 
   border-radius: 0;
   text-transform: capitalize;
-}
+} */
 
 .siteName {
   color: #1c1c1c;

@@ -80,7 +80,7 @@ const Header = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <Link to="/login" className="btn btn-secondary px-8 font-sans">
+            <Link to="/login" className="btn btn-secondary px-8 font-sans rounded-none">
               Appointment
             </Link>
           </div>

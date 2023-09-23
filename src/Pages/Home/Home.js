@@ -9,6 +9,7 @@ import ClientLogo from "../../Components/HomePageHeader/ClientLogo/ClientLogo";
 import SpecialCare from "../../Components/SpecialCare/SpecialCare";
 import WhyChoosePharma from "../../Components/WhyChoosePharma/WhyChoosePharma";
 import ProfessionalDoctors from "../../Components/ProfessionalDoctors/ProfessionalDoctors";
+import LatestArticles from "../../Components/LatestArticles/LatestArticles";
 
 const Home = () => {
   return (
@@ -21,7 +22,8 @@ const Home = () => {
       <PatientFeedback></PatientFeedback>
       <WhyChoosePharma></WhyChoosePharma>
       <ProfessionalDoctors></ProfessionalDoctors>
-      <ContactUs></ContactUs>
+      <LatestArticles></LatestArticles>
+      {/* <ContactUs></ContactUs> */}
     </div>
   );
 };

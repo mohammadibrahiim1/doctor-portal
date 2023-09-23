@@ -47,6 +47,42 @@ const AboutUs = () => {
           </div>
           <img className="flex mx-auto pt-5" src="https://i.ibb.co/LzZDxL1/Photo-8.png" alt="" srcset="" />
         </header>
+
+        <div className="w-[1200px] grid grid-cols-2 mx-auto justify-center gap-[10.688rem]">
+          <div className="">
+            <button className="lato  text-center ">THE LEADERS</button>
+            <h1 className=" font-semibold text-[#1c1c1c] font-sans text-[1.875rem] py-1">
+              We have the best Pharma & Medical
+            </h1>
+            <p className=" font-semibold text-[#545454] font-sans py-2">
+              Collaboratively administrate empowered markets via plug-and-play networks. users after installed base
+              benefits. Dramatically visualize customer.
+              <br /> <br /> Completely synergize resource taxing relationships via premier niche markets. Professionally
+              cultivate one-to-one customer service with robust ideas. Dynamically innovate.
+            </p>
+          </div>
+          <div>
+            <button className="lato text-center ">OUR STORY</button>
+            <h1 className="font-semibold text-[#1c1c1c] font-sans text-[1.875rem] py-1">
+              Our mission is to help patients live better.
+            </h1>
+            <p className="font-semibold text-[#545454] font-sans py-1 ">
+              Collaboratively administrate empowered markets via plug-and-play networks. users after installed base
+              benefits. Dramatically visualize customer.
+            </p>
+            <ul className="py-4 pl-5">
+              <li className="text-[#545454] font-semibold font-sans pb-3 list-disc  ">
+                Over 400 leading hospitals and clinics
+              </li>
+              <li className="text-[#545454] font-semibold font-sans pb-3 list-disc  ">
+                Trusted doctors across 20+ specialties
+              </li>
+              <li className="text-[#545454] font-semibold font-sans pb-3 list-disc  ">
+                Award-winning practice management
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <div>

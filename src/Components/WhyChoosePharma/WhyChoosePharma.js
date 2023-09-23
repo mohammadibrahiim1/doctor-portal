@@ -21,7 +21,7 @@ const WhyChoosePharma = () => {
               one-to-one customer service with robust ideas. Dynamically innovate.
             </div>
           </div>
-          <div className="w-[60.973rem] grid grid-cols-4 mx-auto justify-center items-center  gap-5">
+          <div className="w-[60.973rem] grid grid-cols-4 mx-auto justify-center items-center gap-5">
             {lists.map((list) => (
               <>
                 <div className="flex  items-center gap-1 pt-[2.5rem] ">

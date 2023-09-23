@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import AppointmentModal from "../AppointmentModal/AppointmentModal";
 import AppointmentOption from "../AppointmentOption/AppointmentOption";
 import { useGetAppointmentsQuery } from "../../../redux/features/api/appoinmentsApi/appoinmentsApi";

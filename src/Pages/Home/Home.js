@@ -8,6 +8,7 @@ import About from "../About/About";
 import ClientLogo from "../../Components/HomePageHeader/ClientLogo/ClientLogo";
 import SpecialCare from "../../Components/SpecialCare/SpecialCare";
 import WhyChoosePharma from "../../Components/WhyChoosePharma/WhyChoosePharma";
+import ProfessionalDoctors from "../../Components/ProfessionalDoctors/ProfessionalDoctors";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <SpecialCare></SpecialCare>
       <PatientFeedback></PatientFeedback>
       <WhyChoosePharma></WhyChoosePharma>
+      <ProfessionalDoctors></ProfessionalDoctors>
       <ContactUs></ContactUs>
     </div>
   );

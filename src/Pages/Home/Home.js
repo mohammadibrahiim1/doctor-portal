@@ -23,7 +23,6 @@ const Home = () => {
       <WhyChoosePharma></WhyChoosePharma>
       <ProfessionalDoctors></ProfessionalDoctors>
       <LatestArticles></LatestArticles>
-      {/* <ContactUs></ContactUs> */}
     </div>
   );
 };

@@ -31,7 +31,7 @@ const articles = [
 const LatestArticles = () => {
   return (
     <div>
-      <div className="pt-[104px] pb-[224px]">
+      <div className=" w-[1200px] mx-auto pt-[104px] pb-[224px]">
         <div className="flex justify-between items-center">
           <div>
             <button className="lato text-center">News Update</button>
@@ -46,7 +46,7 @@ const LatestArticles = () => {
           {articles.map((article) => (
             <>
               <div>
-                <div className="card  h-[147px]  card-side rounded-none bg-base-100 ">
+                <div className="card  h-[147px]  card-side rounded-none bg-base-100 shadow-xl ">
                   <figure>
                     <img className="h-[147px]" src={article.image} alt="Movie" />
                   </figure>

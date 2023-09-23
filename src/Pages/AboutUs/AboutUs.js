@@ -48,7 +48,7 @@ const AboutUs = () => {
           <img className="flex mx-auto pt-5" src="https://i.ibb.co/LzZDxL1/Photo-8.png" alt="" srcset="" />
         </header>
 
-        <div className="w-[1200px] grid grid-cols-2 mx-auto justify-center gap-[10.688rem]">
+        <div className="w-[1200px] grid grid-cols-2 mx-auto justify-center gap-[10.688rem] py-[130px]">
           <div className="">
             <button className="lato  text-center ">THE LEADERS</button>
             <h1 className=" font-semibold text-[#1c1c1c] font-sans text-[1.875rem] py-1">
@@ -91,9 +91,12 @@ const AboutUs = () => {
             Online consultations with Certified doctors
           </div>
           <div className=" w-[537px] mx-auto flex items-center justify-between gap-5 mt-5">
-            <button className="bg-[#0FE3AF] text-[#1C1C1C] font-[1rem]  py-[1rem] px-[2rem]  flex mx-auto  font-sans font-semibold ">
+            <label
+              htmlFor="my_modal_6"
+              className="bg-[#0FE3AF] text-[#1C1C1C] font-[1rem]  py-[1rem] px-[2rem]  flex mx-auto  font-sans font-semibold cursor-pointer"
+            >
               Book an Appointment
-            </button>
+            </label>
             <div className="text-white text-center font-semibold font-sans">(OR)</div>
             <button className="bg-[#0152A8] text-[#1C1C1C] font-[1rem]  py-[1rem]  px-[2rem] flex mx-auto  font-sans font-semibold text-white border ">
               Call: 1-800-123-9999
@@ -125,6 +128,73 @@ const AboutUs = () => {
               </div>
             </>
           ))}
+        </div>
+      </div>
+
+      {/* appointment modal */}
+      {/* The button to open modal */}
+      {/* <label htmlFor="my_modal_6" className="btn">
+        open modal
+      </label> */}
+
+      {/* Put this part before </body> tag */}
+      <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+      <div className="modal ">
+        <div className="modal-box bg-[#DCEDFE] rounded-none max-w-5xl flex justify-center items-center gap-[20px] ">
+          <div>
+            <img className="w-[468px] h-[560px]" src="https://i.ibb.co/RC16frr/Photo-9.png" alt="" srcset="" />
+          </div>
+          <div className="bg-white p-5 ml-5">
+            <h3 className="font-bold font-sans text-[#1c1c1c] text-[2rem]">Book an appoinment</h3>
+            <p className="py-2 font-semibold font-sans text-[#545454] ">
+              Lorem Ipsum is simply dummy text of printing and typesetting industry standard dummy text the with the
+              release.
+            </p>
+
+            <form>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans
+                  "
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Phone"
+                  className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans "
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans "
+                />
+              </div>
+              <div>
+                <textarea
+                  className="w-[530px] textarea-lg textarea textarea-bordered rounded-none my-2 font-sans"
+                  placeholder="Message..."
+                ></textarea>
+              </div>
+              <button className="bg-[#0152A8] text-white px-[214px] py-[17px]"> Booking Now</button>
+            </form>
+          </div>
+          <div className="modal-action">
+            {/* <label htmlFor="my_modal_6" className="btn">
+              Close!
+            </label> */}
+          </div>
         </div>
       </div>
     </div>

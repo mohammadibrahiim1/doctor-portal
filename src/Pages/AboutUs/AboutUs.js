@@ -1,4 +1,5 @@
 import React from "react";
+import { FaXmark } from "react-icons/fa6";
 const values = [
   {
     id: 1,
@@ -144,7 +145,7 @@ const AboutUs = () => {
           <div>
             <img className="w-[468px] h-[560px]" src="https://i.ibb.co/RC16frr/Photo-9.png" alt="" srcset="" />
           </div>
-          <div className="bg-white p-5 ml-5">
+          <div className="bg-white p-5 mx-5">
             <h3 className="font-bold font-sans text-[#1c1c1c] text-[2rem]">Book an appoinment</h3>
             <p className="py-2 font-semibold font-sans text-[#545454] ">
               Lorem Ipsum is simply dummy text of printing and typesetting industry standard dummy text the with the
@@ -187,13 +188,15 @@ const AboutUs = () => {
                   placeholder="Message..."
                 ></textarea>
               </div>
+
               <button className="bg-[#0152A8] text-white px-[214px] py-[17px]"> Booking Now</button>
             </form>
-          </div>
-          <div className="modal-action">
-            {/* <label htmlFor="my_modal_6" className="btn">
-              Close!
-            </label> */}
+
+            <div className="modal-action fixed top-[-1rem] left-0 right-1">
+              <label htmlFor="my_modal_6" className="bg-error rounded-full p-2 text-white cursor-pointer">
+                <FaXmark />
+              </label>
+            </div>
           </div>
         </div>
       </div>

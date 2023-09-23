@@ -62,7 +62,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link className="font-sans font-semibold" to="/about">
+                <Link className="font-sans font-semibold" to="/aboutUs">
                   About
                 </Link>
               </li>

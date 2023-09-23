@@ -2,7 +2,7 @@ import React from "react";
 import PatientFeedback from "./PatientFeedback/PatientFeedback";
 import Services from "./Services/Services";
 import HomePageHeader from "../../Components/HomePageHeader/HomePageHeader";
-import About from "../About/About";
+import About from "../../Components/About/About";
 import ClientLogo from "../../Components/HomePageHeader/ClientLogo/ClientLogo";
 import SpecialCare from "../../Components/SpecialCare/SpecialCare";
 import WhyChoosePharma from "../../Components/WhyChoosePharma/WhyChoosePharma";

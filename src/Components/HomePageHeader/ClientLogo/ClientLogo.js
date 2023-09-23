@@ -51,7 +51,7 @@ const ClientLogo = () => {
         </div>
       </div>
 
-      <div className="bg-[#0152A8] p-[8rem] mt-[20px]">
+      <div className=" w-[1200px] h-[408px] mx-auto bg-[#0152A8] p-[8rem] mt-[20px]">
         <div className="w-[505px]  text-[#ffffff] mx-auto text-center text-[1.5rem] font-semibold montserrat">
           Schedule an imperson or virtual appointment today
         </div>

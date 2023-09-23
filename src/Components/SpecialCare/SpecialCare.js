@@ -6,7 +6,7 @@ const SpecialCare = () => {
     <div>
       <div className="flex justify-center items-center gap-[9.313rem] pt-[9.5rem] ">
         <div>
-          <button className="lato">SPEACIAL CARE</button>
+          <button className="lato">SPECIAL CARE</button>
           <div className="w-[496px] font-semibold text-[2rem] montserrat text-[#1c1c1c] pt-[1rem]">
             We provide a best care for your health with specialist
           </div>

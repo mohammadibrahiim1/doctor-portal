@@ -4,7 +4,7 @@ import "./About.css";
 const About = () => {
   return (
     <div>
-      <section className="about_section">
+      <section className="about_section container mx-auto">
         <div>
           <div className="hero">
             <div className="hero-content flex-col  lg:flex-row-reverse">

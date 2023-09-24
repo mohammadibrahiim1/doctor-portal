@@ -16,4 +16,4 @@ const servicesApi = apiSlice.injectEndpoints({
   }),
 });
 
-export const { useGetServicesQuery,useGetServiceByIdQuery } = servicesApi;
+export const { useGetServicesQuery, useGetServiceByIdQuery } = servicesApi;

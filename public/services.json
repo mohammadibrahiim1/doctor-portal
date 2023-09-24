@@ -11,10 +11,10 @@
         "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
 
         "service_list": [
-          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
-          { "id": 2, "name": "Synopsis for high level overviews. " },
-          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
-          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+          { "id": 1, "service_title": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "service_title": "Synopsis for high level overviews. " },
+          { "id": 3, "service_title": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "service_title": "Heading towards a streamlined cloud solution" }
         ],
         "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
       }
@@ -26,35 +26,35 @@
         "health_advice_list": [
           {
             "id": 1,
-            "name": "Comprehensive annual physicals"
+            "advice_name": "Comprehensive annual physicals"
           },
           {
             "id": 2,
-            "name": "Vaccinations"
+            "advice_name": "Vaccinations"
           },
           {
             "id": 3,
-            "name": "Online Bill Payment"
+            "advice_name": "Online Bill Payment"
           },
           {
             "id": 4,
-            "name": "Healthcare Research"
+            "advice_name": "Healthcare Research"
+          },
+          {
+            "id": 5,
+            "advice_name": "Professional Medical Services"
           },
           {
             "id": 6,
-            "name": "Professional Medical Services"
+            "advice_name": "Free Consulting"
           },
           {
             "id": 7,
-            "name": "Free Consulting"
+            "advice_name": "Preventive and wellness care"
           },
           {
             "id": 8,
-            "name": "Preventive and wellness care"
-          },
-          {
-            "id": 9,
-            "name": "Chronic Disease Management"
+            "advice_name": "Chronic Disease Management"
           }
         ]
       }
@@ -72,10 +72,10 @@
         "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
 
         "service_list": [
-          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
-          { "id": 2, "name": "Synopsis for high level overviews. " },
-          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
-          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+          { "id": 1, "service_title": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "service_title": "Synopsis for high level overviews. " },
+          { "id": 3, "service_title": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "service_title": "Heading towards a streamlined cloud solution" }
         ],
         "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
       }
@@ -87,35 +87,35 @@
         "health_advice_list": [
           {
             "id": 1,
-            "name": "Comprehensive annual physicals"
+            "advice_name": "Comprehensive annual physicals"
           },
           {
             "id": 2,
-            "name": "Vaccinations"
+            "advice_name": "Vaccinations"
           },
           {
             "id": 3,
-            "name": "Online Bill Payment"
+            "advice_name": "Online Bill Payment"
           },
           {
             "id": 4,
-            "name": "Healthcare Research"
+            "advice_name": "Healthcare Research"
+          },
+          {
+            "id": 5,
+            "advice_name": "Professional Medical Services"
           },
           {
             "id": 6,
-            "name": "Professional Medical Services"
+            "advice_name": "Free Consulting"
           },
           {
             "id": 7,
-            "name": "Free Consulting"
+            "advice_name": "Preventive and wellness care"
           },
           {
             "id": 8,
-            "name": "Preventive and wellness care"
-          },
-          {
-            "id": 9,
-            "name": "Chronic Disease Management"
+            "advice_name": "Chronic Disease Management"
           }
         ]
       }
@@ -133,10 +133,10 @@
         "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
 
         "service_list": [
-          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
-          { "id": 2, "name": "Synopsis for high level overviews. " },
-          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
-          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+          { "id": 1, "service_title": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "service_title": "Synopsis for high level overviews. " },
+          { "id": 3, "service_title": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "service_title": "Heading towards a streamlined cloud solution" }
         ],
         "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
       }
@@ -148,35 +148,35 @@
         "health_advice_list": [
           {
             "id": 1,
-            "name": "Comprehensive annual physicals"
+            "advice_name": "Comprehensive annual physicals"
           },
           {
             "id": 2,
-            "name": "Vaccinations"
+            "advice_name": "Vaccinations"
           },
           {
             "id": 3,
-            "name": "Online Bill Payment"
+            "advice_name": "Online Bill Payment"
           },
           {
             "id": 4,
-            "name": "Healthcare Research"
+            "advice_name": "Healthcare Research"
+          },
+          {
+            "id": 5,
+            "advice_name": "Professional Medical Services"
           },
           {
             "id": 6,
-            "name": "Professional Medical Services"
+            "advice_name": "Free Consulting"
           },
           {
             "id": 7,
-            "name": "Free Consulting"
+            "advice_name": "Preventive and wellness care"
           },
           {
             "id": 8,
-            "name": "Preventive and wellness care"
-          },
-          {
-            "id": 9,
-            "name": "Chronic Disease Management"
+            "advice_name": "Chronic Disease Management"
           }
         ]
       }
@@ -194,10 +194,10 @@
         "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
 
         "service_list": [
-          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
-          { "id": 2, "name": "Synopsis for high level overviews. " },
-          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
-          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+          { "id": 1, "service_title": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "service_title": "Synopsis for high level overviews. " },
+          { "id": 3, "service_title": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "service_title": "Heading towards a streamlined cloud solution" }
         ],
         "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
       }
@@ -209,35 +209,35 @@
         "health_advice_list": [
           {
             "id": 1,
-            "name": "Comprehensive annual physicals"
+            "advice_name": "Comprehensive annual physicals"
           },
           {
             "id": 2,
-            "name": "Vaccinations"
+            "advice_name": "Vaccinations"
           },
           {
             "id": 3,
-            "name": "Online Bill Payment"
+            "advice_name": "Online Bill Payment"
           },
           {
             "id": 4,
-            "name": "Healthcare Research"
+            "advice_name": "Healthcare Research"
+          },
+          {
+            "id": 5,
+            "advice_name": "Professional Medical Services"
           },
           {
             "id": 6,
-            "name": "Professional Medical Services"
+            "advice_name": "Free Consulting"
           },
           {
             "id": 7,
-            "name": "Free Consulting"
+            "advice_name": "Preventive and wellness care"
           },
           {
             "id": 8,
-            "name": "Preventive and wellness care"
-          },
-          {
-            "id": 9,
-            "name": "Chronic Disease Management"
+            "advice_name": "Chronic Disease Management"
           }
         ]
       }
@@ -255,10 +255,10 @@
         "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
 
         "service_list": [
-          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
-          { "id": 2, "name": "Synopsis for high level overviews. " },
-          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
-          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+          { "id": 1, "service_title": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "service_title": "Synopsis for high level overviews. " },
+          { "id": 3, "service_title": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "service_title": "Heading towards a streamlined cloud solution" }
         ],
         "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
       }
@@ -270,35 +270,35 @@
         "health_advice_list": [
           {
             "id": 1,
-            "name": "Comprehensive annual physicals"
+            "advice_name": "Comprehensive annual physicals"
           },
           {
             "id": 2,
-            "name": "Vaccinations"
+            "advice_name": "Vaccinations"
           },
           {
             "id": 3,
-            "name": "Online Bill Payment"
+            "advice_name": "Online Bill Payment"
           },
           {
             "id": 4,
-            "name": "Healthcare Research"
+            "advice_name": "Healthcare Research"
+          },
+          {
+            "id": 5,
+            "advice_name": "Professional Medical Services"
           },
           {
             "id": 6,
-            "name": "Professional Medical Services"
+            "advice_name": "Free Consulting"
           },
           {
             "id": 7,
-            "name": "Free Consulting"
+            "advice_name": "Preventive and wellness care"
           },
           {
             "id": 8,
-            "name": "Preventive and wellness care"
-          },
-          {
-            "id": 9,
-            "name": "Chronic Disease Management"
+            "advice_name": "Chronic Disease Management"
           }
         ]
       }
@@ -316,10 +316,10 @@
         "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
 
         "service_list": [
-          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
-          { "id": 2, "name": "Synopsis for high level overviews. " },
-          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
-          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+          { "id": 1, "service_title": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "service_title": "Synopsis for high level overviews. " },
+          { "id": 3, "service_title": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "service_title": "Heading towards a streamlined cloud solution" }
         ],
         "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
       }
@@ -331,35 +331,35 @@
         "health_advice_list": [
           {
             "id": 1,
-            "name": "Comprehensive annual physicals"
+            "advice_name": "Comprehensive annual physicals"
           },
           {
             "id": 2,
-            "name": "Vaccinations"
+            "advice_name": "Vaccinations"
           },
           {
             "id": 3,
-            "name": "Online Bill Payment"
+            "advice_name": "Online Bill Payment"
           },
           {
             "id": 4,
-            "name": "Healthcare Research"
+            "advice_name": "Healthcare Research"
+          },
+          {
+            "id": 5,
+            "advice_name": "Professional Medical Services"
           },
           {
             "id": 6,
-            "name": "Professional Medical Services"
+            "advice_name": "Free Consulting"
           },
           {
             "id": 7,
-            "name": "Free Consulting"
+            "advice_name": "Preventive and wellness care"
           },
           {
             "id": 8,
-            "name": "Preventive and wellness care"
-          },
-          {
-            "id": 9,
-            "name": "Chronic Disease Management"
+            "advice_name": "Chronic Disease Management"
           }
         ]
       }
@@ -377,10 +377,10 @@
         "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
 
         "service_list": [
-          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
-          { "id": 2, "name": "Synopsis for high level overviews. " },
-          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
-          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+          { "id": 1, "service_title": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "service_title": "Synopsis for high level overviews. " },
+          { "id": 3, "service_title": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "service_title": "Heading towards a streamlined cloud solution" }
         ],
         "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
       }
@@ -392,35 +392,35 @@
         "health_advice_list": [
           {
             "id": 1,
-            "name": "Comprehensive annual physicals"
+            "advice_name": "Comprehensive annual physicals"
           },
           {
             "id": 2,
-            "name": "Vaccinations"
+            "advice_name": "Vaccinations"
           },
           {
             "id": 3,
-            "name": "Online Bill Payment"
+            "advice_name": "Online Bill Payment"
           },
           {
             "id": 4,
-            "name": "Healthcare Research"
+            "advice_name": "Healthcare Research"
+          },
+          {
+            "id": 5,
+            "advice_name": "Professional Medical Services"
           },
           {
             "id": 6,
-            "name": "Professional Medical Services"
+            "advice_name": "Free Consulting"
           },
           {
             "id": 7,
-            "name": "Free Consulting"
+            "advice_name": "Preventive and wellness care"
           },
           {
             "id": 8,
-            "name": "Preventive and wellness care"
-          },
-          {
-            "id": 9,
-            "name": "Chronic Disease Management"
+            "advice_name": "Chronic Disease Management"
           }
         ]
       }
@@ -438,10 +438,10 @@
         "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
 
         "service_list": [
-          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
-          { "id": 2, "name": "Synopsis for high level overviews. " },
-          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
-          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+          { "id": 1, "service_title": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "service_title": "Synopsis for high level overviews. " },
+          { "id": 3, "service_title": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "service_title": "Heading towards a streamlined cloud solution" }
         ],
         "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
       }
@@ -453,35 +453,35 @@
         "health_advice_list": [
           {
             "id": 1,
-            "name": "Comprehensive annual physicals"
+            "advice_name": "Comprehensive annual physicals"
           },
           {
             "id": 2,
-            "name": "Vaccinations"
+            "advice_name": "Vaccinations"
           },
           {
             "id": 3,
-            "name": "Online Bill Payment"
+            "advice_name": "Online Bill Payment"
           },
           {
             "id": 4,
-            "name": "Healthcare Research"
+            "advice_name": "Healthcare Research"
+          },
+          {
+            "id": 5,
+            "advice_name": "Professional Medical Services"
           },
           {
             "id": 6,
-            "name": "Professional Medical Services"
+            "advice_name": "Free Consulting"
           },
           {
             "id": 7,
-            "name": "Free Consulting"
+            "advice_name": "Preventive and wellness care"
           },
           {
             "id": 8,
-            "name": "Preventive and wellness care"
-          },
-          {
-            "id": 9,
-            "name": "Chronic Disease Management"
+            "advice_name": "Chronic Disease Management"
           }
         ]
       }

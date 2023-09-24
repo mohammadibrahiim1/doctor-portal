@@ -9,16 +9,8 @@ const AvailableAppointments = ({ selectedDate }) => {
   const { data } = useGetAppointmentsQuery();
   console.log(data);
   const appointments = data?.data;
+  console.log(appointments);
   const [treatMent, setTreatMent] = useState({});
-
-  // useEffect(() => {
-  //   fetch("appointment.json")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setAppointments(data);
-  //       console.log(data);
-  //     });
-  // }, []);
 
   return (
     <div>

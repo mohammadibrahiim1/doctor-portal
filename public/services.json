@@ -1,53 +1,490 @@
 [
   {
-    "id": 1,
     "icon": "https://i.ibb.co/jr8BMkG/Frame-2484.png",
     "service_name": "Angioplasty",
-    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily."
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily.",
+    "sub_details": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy  collaborative thinking to further  overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.Capitalize on low hanging fruit to identify a ballpark value added  to beta test.Override the digital divide with additional clickthrough's from of workflows to establish a framework DevOps.",
+    "image": "https://i.ibb.co/bdFsC5y/pexels-shvets-production-8413203-1.png",
+    "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels. Supply chain market graphical user interface assets.”",
+    "type_of_service": [
+      {
+        "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+
+        "service_list": [
+          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "name": "Synopsis for high level overviews. " },
+          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+        ],
+        "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
+      }
+    ],
+    "health_advice": [
+      {
+        "title": "Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.",
+
+        "health_advice_list": [
+          {
+            "id": 1,
+            "name": "Comprehensive annual physicals"
+          },
+          {
+            "id": 2,
+            "name": "Vaccinations"
+          },
+          {
+            "id": 3,
+            "name": "Online Bill Payment"
+          },
+          {
+            "id": 4,
+            "name": "Healthcare Research"
+          },
+          {
+            "id": 6,
+            "name": "Professional Medical Services"
+          },
+          {
+            "id": 7,
+            "name": "Free Consulting"
+          },
+          {
+            "id": 8,
+            "name": "Preventive and wellness care"
+          },
+          {
+            "id": 9,
+            "name": "Chronic Disease Management"
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": 2,
     "icon": "https://i.ibb.co/r3kKBDf/Frame-2485.png",
     "service_name": "Cardiology",
-    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily."
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily.",
+    "image": "https://i.ibb.co/bdFsC5y/pexels-shvets-production-8413203-1.png",
+    "sub_details": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy  collaborative thinking to further  overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.Capitalize on low hanging fruit to identify a ballpark value added  to beta test.Override the digital divide with additional clickthrough's from of workflows to establish a framework DevOps.",
+    "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels. Supply chain market graphical user interface assets.”",
+    "type_of_service": [
+      {
+        "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+
+        "service_list": [
+          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "name": "Synopsis for high level overviews. " },
+          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+        ],
+        "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
+      }
+    ],
+    "health_advice": [
+      {
+        "title": "Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.",
+
+        "health_advice_list": [
+          {
+            "id": 1,
+            "name": "Comprehensive annual physicals"
+          },
+          {
+            "id": 2,
+            "name": "Vaccinations"
+          },
+          {
+            "id": 3,
+            "name": "Online Bill Payment"
+          },
+          {
+            "id": 4,
+            "name": "Healthcare Research"
+          },
+          {
+            "id": 6,
+            "name": "Professional Medical Services"
+          },
+          {
+            "id": 7,
+            "name": "Free Consulting"
+          },
+          {
+            "id": 8,
+            "name": "Preventive and wellness care"
+          },
+          {
+            "id": 9,
+            "name": "Chronic Disease Management"
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": 3,
     "icon": "https://i.ibb.co/GFXRQk2/Frame-2486.png",
     "service_name": "Dental",
     "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily.",
-    "image": "https://i.ibb.co/SfS541t/Photo-6.png"
+    "image": "https://i.ibb.co/SfS541t/Photo-6.png",
+    "sub_details": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy  collaborative thinking to further  overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.Capitalize on low hanging fruit to identify a ballpark value added  to beta test.Override the digital divide with additional clickthrough's from of workflows to establish a framework DevOps.",
+    "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels. Supply chain market graphical user interface assets.”",
+    "type_of_service": [
+      {
+        "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+
+        "service_list": [
+          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "name": "Synopsis for high level overviews. " },
+          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+        ],
+        "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
+      }
+    ],
+    "health_advice": [
+      {
+        "title": "Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.",
+
+        "health_advice_list": [
+          {
+            "id": 1,
+            "name": "Comprehensive annual physicals"
+          },
+          {
+            "id": 2,
+            "name": "Vaccinations"
+          },
+          {
+            "id": 3,
+            "name": "Online Bill Payment"
+          },
+          {
+            "id": 4,
+            "name": "Healthcare Research"
+          },
+          {
+            "id": 6,
+            "name": "Professional Medical Services"
+          },
+          {
+            "id": 7,
+            "name": "Free Consulting"
+          },
+          {
+            "id": 8,
+            "name": "Preventive and wellness care"
+          },
+          {
+            "id": 9,
+            "name": "Chronic Disease Management"
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": 4,
-
     "icon": "https://i.ibb.co/vsxvNcp/Frame-2483.png",
     "service_name": "Eye Care",
     "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily.",
-    "image": "https://i.ibb.co/dk3kdz2/Photo-5.png"
+    "image": "https://i.ibb.co/dk3kdz2/Photo-5.png",
+    "sub_details": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy  collaborative thinking to further  overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.Capitalize on low hanging fruit to identify a ballpark value added  to beta test.Override the digital divide with additional clickthrough's from of workflows to establish a framework DevOps.",
+    "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels. Supply chain market graphical user interface assets.”",
+    "type_of_service": [
+      {
+        "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+
+        "service_list": [
+          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "name": "Synopsis for high level overviews. " },
+          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+        ],
+        "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
+      }
+    ],
+    "health_advice": [
+      {
+        "title": "Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.",
+
+        "health_advice_list": [
+          {
+            "id": 1,
+            "name": "Comprehensive annual physicals"
+          },
+          {
+            "id": 2,
+            "name": "Vaccinations"
+          },
+          {
+            "id": 3,
+            "name": "Online Bill Payment"
+          },
+          {
+            "id": 4,
+            "name": "Healthcare Research"
+          },
+          {
+            "id": 6,
+            "name": "Professional Medical Services"
+          },
+          {
+            "id": 7,
+            "name": "Free Consulting"
+          },
+          {
+            "id": 8,
+            "name": "Preventive and wellness care"
+          },
+          {
+            "id": 9,
+            "name": "Chronic Disease Management"
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": 5,
     "icon": "https://i.ibb.co/vXLz2B2/Frame-2482.png",
     "service_name": "Endocrinology",
-    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily."
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily.",
+    "image": "https://i.ibb.co/bdFsC5y/pexels-shvets-production-8413203-1.png",
+    "sub_details": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy  collaborative thinking to further  overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.Capitalize on low hanging fruit to identify a ballpark value added  to beta test.Override the digital divide with additional clickthrough's from of workflows to establish a framework DevOps.",
+    "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels. Supply chain market graphical user interface assets.”",
+    "type_of_service": [
+      {
+        "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+
+        "service_list": [
+          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "name": "Synopsis for high level overviews. " },
+          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+        ],
+        "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
+      }
+    ],
+    "health_advice": [
+      {
+        "title": "Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.",
+
+        "health_advice_list": [
+          {
+            "id": 1,
+            "name": "Comprehensive annual physicals"
+          },
+          {
+            "id": 2,
+            "name": "Vaccinations"
+          },
+          {
+            "id": 3,
+            "name": "Online Bill Payment"
+          },
+          {
+            "id": 4,
+            "name": "Healthcare Research"
+          },
+          {
+            "id": 6,
+            "name": "Professional Medical Services"
+          },
+          {
+            "id": 7,
+            "name": "Free Consulting"
+          },
+          {
+            "id": 8,
+            "name": "Preventive and wellness care"
+          },
+          {
+            "id": 9,
+            "name": "Chronic Disease Management"
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": 6,
     "icon": "https://i.ibb.co/f29pP6m/Icon-1.png",
     "service_name": "Orthopaedics",
-    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily."
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily.",
+    "image": "https://i.ibb.co/bdFsC5y/pexels-shvets-production-8413203-1.png",
+    "sub_details": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy  collaborative thinking to further  overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.Capitalize on low hanging fruit to identify a ballpark value added  to beta test.Override the digital divide with additional clickthrough's from of workflows to establish a framework DevOps.",
+    "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels. Supply chain market graphical user interface assets.”",
+    "type_of_service": [
+      {
+        "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+
+        "service_list": [
+          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "name": "Synopsis for high level overviews. " },
+          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+        ],
+        "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
+      }
+    ],
+    "health_advice": [
+      {
+        "title": "Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.",
+
+        "health_advice_list": [
+          {
+            "id": 1,
+            "name": "Comprehensive annual physicals"
+          },
+          {
+            "id": 2,
+            "name": "Vaccinations"
+          },
+          {
+            "id": 3,
+            "name": "Online Bill Payment"
+          },
+          {
+            "id": 4,
+            "name": "Healthcare Research"
+          },
+          {
+            "id": 6,
+            "name": "Professional Medical Services"
+          },
+          {
+            "id": 7,
+            "name": "Free Consulting"
+          },
+          {
+            "id": 8,
+            "name": "Preventive and wellness care"
+          },
+          {
+            "id": 9,
+            "name": "Chronic Disease Management"
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": 7,
     "icon": "https://i.ibb.co/f29pP6m/Icon-1.png",
     "service_name": "Orthopaedics",
-    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily."
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily.",
+    "image": "https://i.ibb.co/bdFsC5y/pexels-shvets-production-8413203-1.png",
+    "sub_details": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy  collaborative thinking to further  overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.Capitalize on low hanging fruit to identify a ballpark value added  to beta test.Override the digital divide with additional clickthrough's from of workflows to establish a framework DevOps.",
+    "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels. Supply chain market graphical user interface assets.”",
+    "type_of_service": [
+      {
+        "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+
+        "service_list": [
+          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "name": "Synopsis for high level overviews. " },
+          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+        ],
+        "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
+      }
+    ],
+    "health_advice": [
+      {
+        "title": "Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.",
+
+        "health_advice_list": [
+          {
+            "id": 1,
+            "name": "Comprehensive annual physicals"
+          },
+          {
+            "id": 2,
+            "name": "Vaccinations"
+          },
+          {
+            "id": 3,
+            "name": "Online Bill Payment"
+          },
+          {
+            "id": 4,
+            "name": "Healthcare Research"
+          },
+          {
+            "id": 6,
+            "name": "Professional Medical Services"
+          },
+          {
+            "id": 7,
+            "name": "Free Consulting"
+          },
+          {
+            "id": 8,
+            "name": "Preventive and wellness care"
+          },
+          {
+            "id": 9,
+            "name": "Chronic Disease Management"
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": 8,
     "icon": "https://i.ibb.co/f29pP6m/Icon-1.png",
     "service_name": "Orthopaedics",
-    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily."
+    "details": "Our team of high professionals uses the latest heal echnologies health quickly and easily.",
+    "image": "https://i.ibb.co/bdFsC5y/pexels-shvets-production-8413203-1.png",
+    "sub_details": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy  collaborative thinking to further  overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.Capitalize on low hanging fruit to identify a ballpark value added  to beta test.Override the digital divide with additional clickthrough's from of workflows to establish a framework DevOps.",
+    "quote": "“Crowdsource term sheet freemium beta stealth responsive web design niche market rock star channels. Supply chain market graphical user interface assets.”",
+    "type_of_service": [
+      {
+        "text_1": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+
+        "service_list": [
+          { "id": 1, "name": "Leverage agile frameworks to provide a robust " },
+          { "id": 2, "name": "Synopsis for high level overviews. " },
+          { "id": 3, "name": "Provide a robust synopsis for high level overviews. " },
+          { "id": 4, "name": "Heading towards a streamlined cloud solution" }
+        ],
+        "text_2": "Doctor are choosing from our diverse pool of health specialists. Discover better health & wellness by using our doctor ratings & reviews to make your choice. Once the family has reached a decision, the team informs the relevant parties so final arrangements can begin. Emergency staff who are available 24 hours a day, seven days a week. These staff members are trained professionals."
+      }
+    ],
+    "health_advice": [
+      {
+        "title": "Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.",
+
+        "health_advice_list": [
+          {
+            "id": 1,
+            "name": "Comprehensive annual physicals"
+          },
+          {
+            "id": 2,
+            "name": "Vaccinations"
+          },
+          {
+            "id": 3,
+            "name": "Online Bill Payment"
+          },
+          {
+            "id": 4,
+            "name": "Healthcare Research"
+          },
+          {
+            "id": 6,
+            "name": "Professional Medical Services"
+          },
+          {
+            "id": 7,
+            "name": "Free Consulting"
+          },
+          {
+            "id": 8,
+            "name": "Preventive and wellness care"
+          },
+          {
+            "id": 9,
+            "name": "Chronic Disease Management"
+          }
+        ]
+      }
+    ]
   }
 ]

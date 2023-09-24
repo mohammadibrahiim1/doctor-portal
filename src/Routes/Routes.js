@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home";
 import ContactUs from "../Pages/Home/Contactus/ContactUs";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Services from "../Pages/Home/Services/Services";
+import ServiceDetails from "../Components/ServiceDetails/ServiceDetails";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services></Services>,
+      },
+      {
+        path: "/service/:id",
+        element: <ServiceDetails></ServiceDetails>,
       },
       {
         path: "/aboutUs",

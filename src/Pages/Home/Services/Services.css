@@ -31,3 +31,19 @@
   gap: 20px;
   padding-top: 24px;
 }
+
+.background {
+  background-image: url(https://i.ibb.co/pwMDvdS/Photo-10.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 258px;
+}
+
+.background-img {
+  background-image: url(https://i.ibb.co/zQDfLKq/Photo-11.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 564px;
+}

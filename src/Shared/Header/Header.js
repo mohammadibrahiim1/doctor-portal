@@ -73,6 +73,11 @@ const Header = () => {
                 </Link>
               </li>
               <li>
+                <Link className="font-sans font-semibold" to="/ourTeam">
+                  Our Team
+                </Link>
+              </li>
+              <li>
                 <Link className="font-sans font-semibold" to="/contact">
                   Contact Us
                 </Link>

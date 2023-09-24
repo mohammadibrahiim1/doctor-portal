@@ -7,6 +7,7 @@ import ContactUs from "../Pages/Home/Contactus/ContactUs";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Services from "../Pages/Home/Services/Services";
 import ServiceDetails from "../Components/ServiceDetails/ServiceDetails";
+import OurTeam from "../Pages/OurTeam/OurTeam";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: "/service/:id",
         element: <ServiceDetails></ServiceDetails>,
+      },
+      {
+        path: "/ourTeam",
+        element: <OurTeam></OurTeam>,
       },
       {
         path: "/aboutUs",

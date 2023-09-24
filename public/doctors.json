@@ -1,15 +1,17 @@
 [
   {
-    "id": 345,
+    "doctor_id": 345,
     "name": "Dr. Bowen Chan",
     "gender": "M",
+    "mail": "info@doctorate.com",
     "category": "Cardiologist",
-    "image": "/img/doctors/chan_small.jpg",
+    "image": "https://i.ibb.co/mNM3GGJ/Photo-18.png",
+    "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
     "availability": {
       "Monday": "8:30am - 5:30pm",
       "Wednesday": "1:30pm - 7:30pm",
       "Thursday": "10am - 8pm",
-      "Friday": "9am - 12pm"
+      "Frdoctor_iday": "9am - 12pm"
     },
     "phone": "416-486-1956",
     "address": {
@@ -66,15 +68,17 @@
     ]
   },
   {
-    "id": 564,
+    "doctor_id": 564,
     "name": "Dr. Michael Lewis BSc, MD, CCFP",
     "category": "Pediatrician",
     "gender": "M",
-    "image": "/img/doctors/Michael_Lewis_small.jpg",
+    "mail": "info@doctorate.com",
+    "image": "https://i.ibb.co/drc1WhB/Photo-17.png",
+    "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
     "availability": {
       "Monday": "9am - 5pm",
       "Tuesday": "9am - 12pm",
-      "Friday": "9am - 12pm"
+      "Frdoctor_iday": "9am - 12pm"
     },
     "phone": "416-486-1956",
     "address": {
@@ -98,11 +102,13 @@
     ]
   },
   {
-    "id": 675,
+    "doctor_id": 675,
     "name": "Dr. Sharon Hind BScH, MD, CCFP",
     "category": "Dermatologist",
     "gender": "F",
-    "image": "/img/doctors/sharonwelch_small.jpg",
+    "mail": "info@doctorate.com",
+    "image": "https://i.ibb.co/YdGpS0h/Photo-16.png",
+    "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
     "availability": {
       "Monday": "10am - 2pm",
       "Tuesday": "11am - 5pm",
@@ -163,11 +169,13 @@
     ]
   },
   {
-    "id": 152,
+    "doctor_id": 152,
     "name": "Dr. Sheeja Mathai",
     "category": "Obstetrician",
     "gender": "F",
-    "image": "/img/doctors/drmathai_small.jpg",
+    "mail": "info@doctorate.com",
+    "image": "https://i.ibb.co/19G53RY/Photo-15.png",
+    "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
     "availability": {},
     "phone": "647-722-2370",
     "address": {
@@ -179,11 +187,42 @@
     "reviews": []
   },
   {
-    "id": 222,
+    "doctor_id": 222,
     "name": "Dr. Preston Tran",
     "gender": "M",
+    "mail": "info@doctorate.com",
     "category": "Orthopedic Surgeon",
-    "image": "/img/doctors/TranTriet_small.jpg",
+    "image": "https://i.ibb.co/p1LtPXy/photo-13.png",
+    "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
+    "phone": "647-722-2370",
+    "address": {
+      "street": "390 Steeles Avenue West",
+      "city": "Vaughan",
+      "prov": "ON",
+      "postal": "L4J"
+    },
+    "reviews": [
+      {
+        "name": "",
+        "rating": 4.5,
+        "comments": "Wonderful doctor: respectful, skillful, thorough, takes time, cares. ",
+        "attributes": {
+          "staff": 4,
+          "punctual": 4,
+          "helpful": 5,
+          "knowledge": 5
+        }
+      }
+    ]
+  },
+  {
+    "doctor_id": 962,
+    "name": "Dr. Emily Bell",
+    "gender": "M",
+    "mail": "info@doctorate.com",
+    "category": "Orthopedic Surgeon",
+    "image": "https://i.ibb.co/X72WBtd/Photo-14.png",
+    "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
     "phone": "647-722-2370",
     "address": {
       "street": "390 Steeles Avenue West",

@@ -13,7 +13,7 @@ const DoctorDetails = () => {
     <div>
       <div className=" w-[1744px] mx-auto bg-[#DCEDFE] my-[39px] ">
         <div className="w-[1200px] bg-[#F1F1F1] mx-auto p-[27px] ">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center gap-[50px]">
             <img className="w-[456.98px]" src={image} alt="" srcset="" />
 
             <div className="w-[674.953px]">
@@ -55,6 +55,95 @@ const DoctorDetails = () => {
                 </div>
               </div>
               <button className="bg-[#0152A8] py-[17px] px-[41px] text-white font-sans">Discover Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-[1200px] mx-auto flex justify-center items-center gap-10">
+        <div className="w-[691px]">
+          <form className="bg-[#f1f1f1] p-[81px]">
+            <h1 className="text-4xl text-[#1c1c1c] font-semibold font-sans">Book an appointment</h1>
+            <p className="text-sm font-semibold text-[#515151] font-sans py-4">
+              Lorem Ipsum is simply dummy text of printing and typesetting industry standard dummy text the with the
+              release.
+            </p>
+            <div>
+              <input
+                type="text"
+                placeholder="Name"
+                className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans
+                  "
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Phone"
+                className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans "
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Department"
+                className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans "
+              />
+            </div>
+            <div>
+              <input
+                type="date"
+                placeholder="Date"
+                className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans "
+              />
+            </div>
+
+            <div>
+              <select
+                className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans"
+                id="cars"
+                name="cars"
+                placeholder="Choose a doctor"
+              >
+                <option value={name}>{name}</option>
+                <option value="saab">{name}</option>
+                <option value="fiat">{name}</option>
+                <option value="audi">{name}</option>
+              </select>
+            </div>
+
+            <div>
+              <textarea
+                className="w-[530px] textarea-lg textarea textarea-bordered rounded-none my-2 font-sans"
+                placeholder="Message..."
+              ></textarea>
+            </div>
+
+            <button className="bg-[#0152A8] text-white px-[214px] py-[17px]"> Booking Now</button>
+          </form>
+        </div>
+
+        <div className="flex flex-col gap-5">
+          <div className="working_hours text-center py-[86px] ">
+            <div className="bg-[#f1f1f1] w-[350px] mx-auto px-[31px] py-[46px] ">
+              <button className="lato">Time</button>
+              <h1 className="text-2xl text-[#1c1c1c] font-semibold py-4">Working Hours</h1>
+              <p>Sunday To Friday 9.00 am - 10.00 pm Saturday Closed</p>
+            </div>
+          </div>
+          <div className="text-center ">
+            <div className="bg-[#0152A8] w-[500px] mx-auto px-[31px] py-[46px]  ">
+              <h1 className="text-[3.125rem] text-white font-semibold leading-12">Didn’t Find a Question? </h1>
+              <p className="w-[222px] mx-auto font-sm text-white pb-2">
+                Donec efficitur, enim bibendum volutpat dictum, tellus risus porttitor leo.
+              </p>
+              <button className="bg-[#0FE3AF] py-[17px] px-[56px] ">More Questions</button>
             </div>
           </div>
         </div>

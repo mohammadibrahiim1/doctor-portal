@@ -9,8 +9,7 @@ const OurTeam = () => {
 
   const doctors = data?.data;
   console.log(doctors);
-  // https://i.ibb.co/YZbJTKm/Photo-20.png
-  // https://i.ibb.co/nRBzGfZ/Photo-19.png
+
   return (
     <div>
       <div>
@@ -27,7 +26,9 @@ const OurTeam = () => {
                     <img src={doctor.image} alt="" srcset="" />
 
                     <div className="py-[23px] text-center">
-                      <h1 className="text-[1.25rem] font-semibold font-sans py-2">{doctor.name}</h1>
+                      <Link to={`/doctor/${doctor._id}`} className="text-[1.25rem] font-semibold font-sans py-2">
+                        {doctor.name}
+                      </Link>
                       <h1 className="text-[0.875rem] text-[#545454] font-semibold font-sans">{doctor.category}</h1>
                     </div>
                     <div className="flex justify-center items-center gap-[27px]">
@@ -95,13 +96,7 @@ const OurTeam = () => {
           </div>
         </div>
 
-        {/* appointment modal */}
-        {/* The button to open modal */}
-        {/* <label htmlFor="my_modal_6" className="btn">
-        open modal
-      </label> */}
-
-        {/* Put this part before </body> tag */}
+        {/* Put this part before </body> tag  modal*/}
         <input type="checkbox" id="my_modal_6" className="modal-toggle" />
         <div className="modal ">
           <div className="modal-box bg-[#DCEDFE] rounded-none max-w-5xl flex justify-center items-center gap-[20px] ">

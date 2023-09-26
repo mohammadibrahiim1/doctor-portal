@@ -9,6 +9,8 @@ import Services from "../Pages/Home/Services/Services";
 import ServiceDetails from "../Components/ServiceDetails/ServiceDetails";
 import OurTeam from "../Pages/OurTeam/OurTeam";
 import DoctorDetails from "../Components/DoctorsDetails/DoctorDetails";
+import Blog from "../Pages/Blog/Blog";
+import ArticleDetails from "../Components/ArticleDetails/ArticleDetails";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -52,6 +54,14 @@ export const router = createBrowserRouter([
       {
         path: "/aboutUs",
         element: <AboutUs />,
+      },
+      {
+        path: "/articles",
+        element: <Blog />,
+      },
+      {
+        path: "/article/:id",
+        element: <ArticleDetails></ArticleDetails>,
       },
       {
         path: "/contact",

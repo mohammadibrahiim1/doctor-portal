@@ -196,9 +196,9 @@ const ArticleDetails = () => {
           </p>
         </div>
 
-        <div class="flex justify-between items-center w-[580px] mx-auto py-5">
+        <div class="flex justify-between items-center w-[600px] mx-auto  my-5 px-4 border">
           <div class="flex items-center gap-5 ">
-            <p className="capitalize text-sm font-semibold">share the article</p>
+            <p className="capitalize text-lg font-semibold">share the article</p>
           </div>
 
           <div class="flex gap-12 py-12">
@@ -247,6 +247,57 @@ const ArticleDetails = () => {
               </svg>
             </Link>
           </div>
+
+
+
+
+        </div>
+
+        <div  >
+
+          <h1 className="text-[1.875rem] font-semibold pt-5 " >
+            Leave a comment
+          </h1>
+
+          <form>
+            <div>
+              <input
+                type="text"
+                placeholder="Name"
+                className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans
+                  "
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Website"
+                className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans "
+              />
+            </div>
+            {/* <div>
+              <input
+                type="text"
+                placeholder="Subject"
+                className="input input-bordered border-[#DCDCDC] w-[530px] rounded-none my-2 font-sans "
+              />
+            </div> */}
+            <div>
+              <textarea
+                className="w-[530px] textarea-lg textarea textarea-bordered rounded-none my-2 font-sans"
+                placeholder="Message..."
+              ></textarea>
+            </div>
+
+            <button className="bg-[#0152A8] text-white px-[50px] py-[17px]">Post a comment</button>
+          </form>
         </div>
       </div>
     </div>

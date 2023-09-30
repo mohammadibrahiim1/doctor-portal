@@ -255,7 +255,7 @@ const ArticleDetails = () => {
 
         <div  >
 
-          <h1 className="text-[1.875rem] font-semibold pt-5 " >
+          <h1 className="text-[1.875rem] font-semibold pt-5 font-sans " >
             Leave a comment
           </h1>
 
@@ -296,7 +296,7 @@ const ArticleDetails = () => {
               ></textarea>
             </div>
 
-            <button className="bg-[#0152A8] text-white px-[50px] py-[17px]">Post a comment</button>
+            <button className="bg-[#0152A8] text-white px-[50px] py-[17px] font-sans">Post a comment</button>
           </form>
         </div>
       </div>

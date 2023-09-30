@@ -1,0 +1,10 @@
+.error_bg_img {
+  background-image: url(https://i.ibb.co/f1jY0R1/Background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.error_number{
+font-family: monospace;
+font-weight: 900;
+}

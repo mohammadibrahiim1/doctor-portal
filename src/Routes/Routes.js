@@ -11,6 +11,7 @@ import OurTeam from "../Pages/OurTeam/OurTeam";
 import DoctorDetails from "../Components/DoctorsDetails/DoctorDetails";
 import Blog from "../Pages/Blog/Blog";
 import ArticleDetails from "../Components/ArticleDetails/ArticleDetails";
+import ErrorElement from "../Components/ErrorElement/ErrorElement";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorElement></ErrorElement>,
     children: [
       {
         path: "/",

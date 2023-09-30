@@ -36,14 +36,14 @@ const ContactUs = () => {
           </header>
         </header>
 
-        <div className="w-[1200px] mx-auto " >
+        <div className="w-[1200px] mx-auto py-[90px] " >
           <header className="text-center">
             <button className="lato" >contact us</button>
-            <h2 className="text-[#1c1c1c] font-semibold font-sans text-3xl" >Get In Touch With Us!</h2>
+            <h2 className="text-[#1c1c1c] font-semibold font-sans text-3xl py-[22px]" >Get In Touch With Us!</h2>
           </header>
 
           <div>
-            <div className="grid grid-cols-3 justify-center items-center gap-5 " >
+            <div className="grid grid-cols-3 justify-center items-center gap-5 py-5 " >
               {contactInfo.map(contact => <>
 
                 <div>
@@ -55,6 +55,55 @@ const ContactUs = () => {
                 </div>
               </>)}
             </div>
+          </div>
+
+
+          <div className="bg-gradient-to-b from-[#DCEDFE] to-[#F5F7FF] p-[100px] my-8">
+
+            <form>
+              <div className="flex justify-center items-center gap-5">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                    className="input input-bordered border-[#DCDCDC] w-[490px] rounded-none my-2 font-sans
+                  "
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="input input-bordered border-[#DCDCDC] w-[490px] rounded-none my-2 font-sans"
+                  />
+                </div>
+              </div>
+              <div className="flex justify-center items-center gap-5" >
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Phone"
+                    className="input input-bordered border-[#DCDCDC] w-[490px] rounded-none my-2 font-sans "
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    className="input input-bordered border-[#DCDCDC] w-[490px] rounded-none my-2 font-sans "
+                  />
+                </div>
+              </div>
+              <div className="flex justify-center items-center gap-5 mb-3"  >
+                <textarea rows={'10'}
+                  className=" w-full textarea-lg textarea textarea-bordered rounded-none my-2 font-sans "
+                  placeholder="Message..."
+                ></textarea>
+              </div>
+
+              <button className="bg-[#0152A8] text-white px-[214px] py-[17px] flex mx-auto "> Send Message</button>
+            </form>
           </div>
         </div>
       </section>

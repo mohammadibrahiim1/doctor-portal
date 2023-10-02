@@ -19,7 +19,7 @@ const initialState = {
 export const createUser = createAsyncThunk('auth/createUser', async ({ email, password }) => {
     const data = await createUserWithEmailAndPassword(auth, email, password);
     console.log(data);
-    return data.email;
+    return data.user.email;
 })
 
 

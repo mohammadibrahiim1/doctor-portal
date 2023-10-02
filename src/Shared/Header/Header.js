@@ -89,7 +89,12 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className="navbar-end">
+          <div className="navbar-end flex justify-start  items-center gap-8 ">
+            <div className="avatar">
+              <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <img src="" alt='userPhoto' />
+              </div>
+            </div>
             <Link to="/appointment" className="btn btn-secondary px-8 font-sans rounded-none">
               Appointment
             </Link>

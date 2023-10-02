@@ -1,35 +1,11 @@
-import React, { useState } from "react";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import app from "../../firebase/firebase.config";
-import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
-import { setDoc, doc } from "firebase/firestore";
-import { storage } from "../../firebase/firebase.config";
-import { db } from "../../firebase/firebase.config";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { createUser } from "../../redux/features/auth/authSlice";
+import toast from "react-hot-toast";
 
 const Signup = () => {
   const dispatch = useDispatch()
-  const handleGoogleSignup = () => {
-    window.open('http://localhost:5000/auth/google', '_self')
-  }
 
-  const handleFacebookSignup = () => {
-    window.open('http://localhost:5000/auth/google', '_self')
-
-  }
-  const handleAppleSignup = () => {
-    console.log('apple signup');
-  }
-
-
-  // const auth = getAuth(app);
-
-
-  // const [userName, setUsername] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [password, setPassword] = useState('');
-  // const [loading, setLoading] = useState(false)
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -40,7 +16,9 @@ const Signup = () => {
     console.log(name, email, password);
 
     try {
-      dispatch(createUser({ name: form.name.value, email: form.email.value, password: form.password.value }))
+      dispatch(createUser({ name: form.name.value, email: form.email.value, password: form.password.value })
+      );
+      toast.success(`user created successfully`)
     } catch (error) {
       console.log(error);
       window.alert('something went wrong!')
@@ -124,17 +102,17 @@ const Signup = () => {
               </div>
 
               <div className="flex justify-center items-center gap-5">
-                <button onClick={handleGoogleSignup}
+                <button
                   className=" capitalize font-sans btn-primary rounded-xl text-white text-[13px] bg-[#84C7AE] h-[45px] flex justify-center items-center mx-auto hover:bg-[#84c7ae] my-4 px-5 "
                 >
                   continue with google
                 </button>
-                <button onClick={handleFacebookSignup}
+                <button
                   className=" capitalize font-sans btn-primary rounded-xl text-white text-[13px] bg-[#84C7AE] h-[45px] flex justify-center items-center mx-auto hover:bg-[#84c7ae] my-4 px-5"
                 >
                   continue with facebook
                 </button>
-                <button onClick={handleAppleSignup}
+                <button
                   className=" capitalize font-sans btn-primary rounded-xl text-white text-[13px] bg-[#84C7AE] h-[45px] flex justify-center items-center mx-auto hover:bg-[#84c7ae] my-4 px-5"
                 >
                   continue with Apple

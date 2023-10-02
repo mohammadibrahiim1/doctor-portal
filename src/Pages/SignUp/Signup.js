@@ -1,17 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import app from "../../firebase/firebase.config";
+import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
+import { setDoc, doc } from "firebase/firestore";
+import { storage } from "../../firebase/firebase.config";
+import { db } from "../../firebase/firebase.config";
+import { useDispatch } from "react-redux";
+import { createUser } from "../../redux/features/auth/authSlice";
 
 const Signup = () => {
+  const dispatch = useDispatch()
   const handleGoogleSignup = () => {
     window.open('http://localhost:5000/auth/google', '_self')
   }
 
   const handleFacebookSignup = () => {
     window.open('http://localhost:5000/auth/google', '_self')
-    
+
   }
   const handleAppleSignup = () => {
     console.log('apple signup');
   }
+
+
+  // const auth = getAuth(app);
+
+
+  // const [userName, setUsername] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
+  // const [loading, setLoading] = useState(false)
+
+  const handleSignup = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const name = form.name.value;
+    const password = form.password.value;
+    console.log(name, email, password);
+
+    try {
+      dispatch(createUser({ name: form.name.value, email: form.email.value, password: form.password.value }))
+    } catch (error) {
+      console.log(error);
+      window.alert('something went wrong!')
+    }
+
+
+  }
+
   return (
     <div>
       <div
@@ -23,18 +60,20 @@ const Signup = () => {
           <div className="card flex-shrink-0 w-[698px] h-[698px]  shadow-2xl bg-[#F6FBF9] p-10">
             <h2 className="text-center text-[55px] text-[#000] font-sans font-semibold">Create An Account </h2>
             <p className="text-center text-[#32403B] text-[19px] font-sans font-semibold w-[400px] mx-auto" >Create an account to enjoy all the services without any ads for free!</p>
-            <div
+            <form
               className="card-body"
+              onSubmit={handleSignup}
             >
 
               <div className="form-control">
-
                 <input
 
                   type="text"
                   name="name"
                   placeholder="your name"
+                  // value={userName}
                   className="input input-sm w-full input-bordered text-lg capitalize font-sans h-[64px]"
+                // onChange={e => setUsername(e.target.value)}
                 />
               </div>
               <div className="form-control">
@@ -43,7 +82,9 @@ const Signup = () => {
                   placeholder="email"
                   type="email"
                   name="email"
-                  className="input input-sm w-full input-bordered text-lg capitalize font-sans h-[64px] my-4"
+                  // value={email}
+                  className="input input-sm w-full input-bordered text-lg  font-sans h-[64px] my-4"
+                // onChange={e => setEmail(e.target.value)}
                 />
               </div>
               <div className="form-control">
@@ -52,14 +93,18 @@ const Signup = () => {
 
                   type="password"
                   name="password"
+                  // value={password}
                   placeholder="password"
                   className="input input-sm w-full input-bordered text-lg capitalize font-sans h-[64px]"
+                // onChange={e => setPassword(e.target.value)}
+
                 />
 
               </div>
               <div className="">
                 <button
                   className=" capitalize font-sans btn-primary rounded-xl text-white text-[30px] bg-[#84C7AE] h-[60px] w-[391px] flex justify-center items-center mx-auto hover:bg-[#84c7ae] my-4"
+                  type="submit"
                 >
                   create account
                 </button>
@@ -96,7 +141,7 @@ const Signup = () => {
                 </button>
 
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@ import DoctorDetails from "../Components/DoctorsDetails/DoctorDetails";
 import Blog from "../Pages/Blog/Blog";
 import ArticleDetails from "../Components/ArticleDetails/ArticleDetails";
 import ErrorElement from "../Components/ErrorElement/ErrorElement";
+import PrivateRoutes from "./PrivateRoutes";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -35,8 +36,13 @@ export const router = createBrowserRouter([
       },
       {
         path: "/appointment",
-        element: <AppointMent></AppointMent>,
+        element: (
+          <PrivateRoutes>
+            <AppointMent></AppointMent>
+          </PrivateRoutes>
+        ),
       },
+      
       {
         path: "/services",
         element: <Services></Services>,

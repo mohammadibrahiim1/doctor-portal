@@ -3,27 +3,26 @@ import "./App.css";
 import { router } from "./Routes/Routes";
 import { Toaster } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
-import { logout, selectUser, setUser } from "./redux/features/auth/authSlice";
-import { auth, onAuthStateChanged } from './firebase/firebase.config'
+import { setUser, toggleLoading } from "./redux/features/auth/authSlice";
 import { useEffect } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import auth from "./firebase/firebase.config";
 
 const App = () => {
   // const user = useSelector(selectUser);
   const dispatch = useDispatch();
+  const { isLoading } = useSelector((state) => state.auth);
+  console.log(isLoading);
 
   useEffect(() => {
-    onAuthStateChanged(auth, (userAuth) => {
-      if (userAuth) {
-        dispatch(setUser({
-          email: userAuth.email,
-          uid: userAuth.uid,
-          displayName: userAuth.displayName,
-          photoURL: userAuth.photoURL
-        }))
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        console.log(user);
+        dispatch(setUser(user.email));
       } else {
-        dispatch(logout())
+        dispatch(toggleLoading());
       }
-    })
+    });
   }, [dispatch]);
 
   return (

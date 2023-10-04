@@ -14,15 +14,15 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
   return (
     <div>
       <section>
-        <header className=" w-[1744px] h-[432px] bg-indigo-200 mx-auto">
+        <header className=" w-[1744px] py-[140px] bg-indigo-200 mx-auto">
           <h1 className="text-[#1C1C1C] text-[40px] font-bold font-sans text-center w-[590px] mx-auto">
             Wide network of healthcare solutions
           </h1>
         </header>
 
-        <div className="w-[1000px] mx-auto bg-[F1F1F1]">
+        <div className="w-[1000px] mx-auto bg-[#F1F1F1]">
           <form className="p-[100px]" onSubmit={handleSubmit(onSubmit)}>
-            <div className="flex gap-3 items-center py-4 ">
+            <div className="flex gap-3 items-center py-5 ">
               <input
                 type="text"
                 placeholder="Enter your name here"
@@ -69,7 +69,7 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
               </select>
             </div>
 
-            <div className="flex items-center gap-4 py-4">
+            <div className="flex items-center gap-4 py-5">
               <input
                 type="tel"
                 placeholder="Mobile number"
@@ -107,13 +107,13 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
             </div>
 
             <input
-              className="bg-[#0152A8] w-full text-white font-sans font-semibold  py-3 cursor-pointer"
+              className="bg-[#0152A8] w-full text-white font-sans font-semibold  py-3 cursor-pointer my-3"
               type="submit"
             />
+            <h6 className="text-[#0152A8] font-sans font-semibold text-[15px] py-5">
+              Tahnk you for your booking. we will call you shortly
+            </h6>
           </form>
-          <h6 className="text-[#0152A8] font-sans font-semibold text-[15px] py-5">
-            Tahnk you for your booking. we will call you shortly
-          </h6>
         </div>
       </section>
 

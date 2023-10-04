@@ -1,9 +1,17 @@
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+} from "@material-tailwind/react";
 import React from "react";
 // import { DayPicker } from "react-day-picker";
 // import { format } from "date-fns";
 import { useForm } from "react-hook-form";
 
 const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
+  const [open, setOpen] = React.useState(1);
+
+  const handleOpen = (value) => setOpen(open === value ? 0 : value);
   const {
     register,
     handleSubmit,
@@ -20,8 +28,8 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
           </h1>
         </header>
 
-        <div className="w-[1000px] mx-auto bg-[#F1F1F1] relative bottom-24">
-          <form className="p-[100px]" onSubmit={handleSubmit(onSubmit)}>
+        <div className="w-[1200px] mx-auto bg-[#F1F1F1] relative bottom-24">
+          <form className="p-[200px]" onSubmit={handleSubmit(onSubmit)}>
             <div className="flex gap-3 items-center py-5 ">
               <input
                 type="text"
@@ -115,33 +123,74 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
           </form>
         </div>
 
-        <div>
-          <div className="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" checked="checked" />
-            <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
-            </div>
-            <div className="collapse-content">
-              <p>hello</p>
-            </div>
+        <div className="w-[1200px] mx-auto flex items-center gap-12">
+          <div>
+            <Accordion open={open === 1}>
+              <AccordionHeader onClick={() => handleOpen(1)}>
+                Does a rinse or mouthwash help?
+              </AccordionHeader>
+              <AccordionBody>
+                We&apos;re not always in the position that we want to be at.
+                We&apos;re constantly growing. We&apos;re constantly making
+                mistakes. We&apos;re constantly trying to express ourselves and
+                actualize our dreams.
+              </AccordionBody>
+            </Accordion>
+            <Accordion open={open === 2}>
+              <AccordionHeader onClick={() => handleOpen(2)}>
+                How can I fix my teeth and smile?
+              </AccordionHeader>
+              <AccordionBody>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
+                in arcu cursus euismod quis viverra.
+              </AccordionBody>
+            </Accordion>
+            <Accordion open={open === 3}>
+              <AccordionHeader onClick={() => handleOpen(3)}>
+                Why do I need dental exams?
+              </AccordionHeader>
+              <AccordionBody>
+                We&apos;re not always in the position that we want to be at.
+                We&apos;re constantly growing. We&apos;re constantly making
+                mistakes. We&apos;re constantly trying to express ourselves and
+                actualize our dreams.
+              </AccordionBody>
+            </Accordion>
           </div>
-          <div className="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
-            </div>
-            <div className="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div className="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
-            </div>
-            <div className="collapse-content">
-              <p>hello</p>
-            </div>
+          <div>
+            <Accordion open={open === 1}>
+              <AccordionHeader onClick={() => handleOpen(1)}>
+                Does a rinse or mouthwash help?
+              </AccordionHeader>
+              <AccordionBody>
+                We&apos;re not always in the position that we want to be at.
+                We&apos;re constantly growing. We&apos;re constantly making
+                mistakes. We&apos;re constantly trying to express ourselves and
+                actualize our dreams.
+              </AccordionBody>
+            </Accordion>
+            <Accordion open={open === 2}>
+              <AccordionHeader onClick={() => handleOpen(2)}>
+                How can I fix my teeth and smile?
+              </AccordionHeader>
+              <AccordionBody>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
+                in arcu cursus euismod quis viverra.
+              </AccordionBody>
+            </Accordion>
+            <Accordion open={open === 3}>
+              <AccordionHeader onClick={() => handleOpen(3)}>
+                Why do I need dental exams?
+              </AccordionHeader>
+              <AccordionBody>
+                We&apos;re not always in the position that we want to be at.
+                We&apos;re constantly growing. We&apos;re constantly making
+                mistakes. We&apos;re constantly trying to express ourselves and
+                actualize our dreams.
+              </AccordionBody>
+            </Accordion>
           </div>
         </div>
       </section>

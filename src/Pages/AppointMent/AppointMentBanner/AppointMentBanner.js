@@ -13,14 +13,14 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
   console.log(errors);
   return (
     <div>
-      <section>
-        <header className=" w-[1744px] py-[140px] bg-indigo-200 mx-auto">
+      <section className="py-5">
+        <header className=" w-[1744px] py-[140px] bg-indigo-200 mx-auto ">
           <h1 className="text-[#1C1C1C] text-[40px] font-bold font-sans text-center w-[590px] mx-auto">
             Wide network of healthcare solutions
           </h1>
         </header>
 
-        <div className="w-[1000px] mx-auto bg-[#F1F1F1]">
+        <div className="w-[1000px] mx-auto bg-[#F1F1F1] relative bottom-24">
           <form className="p-[100px]" onSubmit={handleSubmit(onSubmit)}>
             <div className="flex gap-3 items-center py-5 ">
               <input

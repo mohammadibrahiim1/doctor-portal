@@ -44,8 +44,7 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
             </div>
             <div className="flex items-center gap-3">
               <select
-                className="input input-bordered border-[#DCDCDC] w-[490px] rounded my-2 font-sans
-              "
+                className="input input-bordered border-[#DCDCDC] w-[490px] rounded my-2 font-sans"
                 {...register("Title", { required: true })}
               >
                 <option value="selected">Choose a Department</option>
@@ -94,7 +93,7 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
               />
 
               <select
-                className="input input-bordered border-[#DCDCDC] w-[320px] rounded my-2 font-sans
+                className="input input-bordered border-[#DCDCDC] w-[320px]  rounded my-2 font-sans
               "
                 {...register("Title", { required: true })}
               >

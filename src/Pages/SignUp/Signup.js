@@ -99,7 +99,7 @@ const Signup = () => {
                     {...register("first name", {
                       required: true,
                     })}
-                    className="block w-[320px] h-[45px] rounded-md border-1 py-3 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-[320px] h-[45px] rounded-md border-1 py-3 my-3 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
                 <div>
@@ -114,7 +114,7 @@ const Signup = () => {
                     id="last name"
                     placeholder="Last Name"
                     {...register("last name", { required: true })}
-                    className="block w-[320px] h-[45px] rounded-md border-1 py-3 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-[320px] h-[45px] rounded-md border-1 py-3 my-3 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -158,7 +158,7 @@ const Signup = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-5">
+              <div className="flex justify-between items-center gap-5">
                 <div className="flex flex-col items-start">
                   <label
                     htmlFor="Password"
@@ -177,7 +177,7 @@ const Signup = () => {
                     className="block w-[320px] h-[45px] rounded-md border-1 py-3 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
-                <div className="w-[320px]">
+                <div className="px-5">
                   <h2 className="font-semibold text-[#4b4a4a] font-sans">
                     Gender :{" "}
                   </h2>

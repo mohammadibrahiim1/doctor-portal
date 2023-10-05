@@ -2,10 +2,10 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 
-import { useNavigate } from "react-router-dom";
-import { loginUser } from "../../redux/features/auth/authSlice";
 import { useEffect } from "react";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+import { loginUser } from "../../redux/features/auth/authSlice";
 // import loginImage from "../assets/login.svg";
 const Login = () => {
   const { isLoading, email, isError, error } = useSelector(
@@ -106,7 +106,7 @@ const Login = () => {
               className="h-[490px] w-[490px] pt-7"
               src="https://i.ibb.co/JHn3VVh/copy-1illistration-1.png"
               alt=""
-              srcset=""
+              srcSet=""
             />
           </div>
         </div>

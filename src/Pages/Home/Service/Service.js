@@ -1,6 +1,6 @@
 import React from "react";
-import "./Service.css";
 import { Link } from "react-router-dom";
+import "./Service.css";
 // import { FaCapsules } from "react-icons/fa6";
 
 const Service = ({ service }) => {
@@ -12,7 +12,7 @@ const Service = ({ service }) => {
         <div className="service_card">
           <div>
             <div>
-              <img src={icon} alt="" srcset="" />
+              <img src={icon} alt="" srcSet="" />
             </div>
             <h2 className="service_name">{service_name}</h2>
             <p className="service_details">{details}</p>

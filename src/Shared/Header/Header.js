@@ -1,10 +1,10 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-import "./Header.css";
-import { useDispatch, useSelector } from "react-redux";
 import { signOut } from "firebase/auth";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase/firebase.config";
 import { logout } from "../../redux/features/auth/authSlice";
+import "./Header.css";
 
 const Header = () => {
   const { email } = useSelector((state) => state.auth);

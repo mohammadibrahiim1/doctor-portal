@@ -1,8 +1,8 @@
 import React from "react";
-import "./OurTeam.css";
-import { useGetDoctorsQuery } from "../../redux/features/api/doctorsApi/doctorsApi";
-import { Link } from "react-router-dom";
 import { FaXmark } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { useGetDoctorsQuery } from "../../redux/features/api/doctorsApi/doctorsApi";
+import "./OurTeam.css";
 
 const OurTeam = () => {
   const { data } = useGetDoctorsQuery();
@@ -23,7 +23,7 @@ const OurTeam = () => {
               <>
                 <div className="w-[360px] bg-[#F1F1F1]">
                   <div className="flex flex-col justify-center items-center py-8">
-                    <img src={doctor.image} alt="" srcset="" />
+                    <img src={doctor.image} alt="" srcSet="" />
 
                     <div className="py-[23px] text-center">
                       <Link to={`/doctor/${doctor._id}`} className="text-[1.25rem] font-semibold font-sans py-2">
@@ -47,8 +47,8 @@ const OurTeam = () => {
                       <Link>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M23.9629 10.7738C23.9629 4.82536 18.8136 0.00219727 12.4629 0.00219727C6.11222 0.00219727 0.962891 4.82536 0.962891 10.7738C0.962891 16.1499 5.16758 20.6062 10.666 21.415V13.8884H7.74532V10.7738H10.666V8.40066C10.666 5.70151 12.3833 4.20936 15.0098 4.20936C16.2682 4.20936 17.5845 4.41999 17.5845 4.41999V7.07104H16.1336C14.7059 7.07104 14.2593 7.90103 14.2593 8.7541V10.7738H17.4484L16.9392 13.8884H14.2598V21.416C19.7582 20.6076 23.9629 16.1514 23.9629 10.7738Z"
                             fill="#0152A8"
                           />
@@ -92,7 +92,7 @@ const OurTeam = () => {
             </div>
           </div>
           <div>
-            <img className="w-[935px] h-[449px] " src="https://i.ibb.co/nRBzGfZ/Photo-19.png" alt="" srcset="" />
+            <img className="w-[935px] h-[449px] " src="https://i.ibb.co/nRBzGfZ/Photo-19.png" alt="" srcSet="" />
           </div>
         </div>
 
@@ -101,7 +101,7 @@ const OurTeam = () => {
         <div className="modal ">
           <div className="modal-box bg-[#DCEDFE] rounded-none max-w-5xl flex justify-center items-center gap-[20px] ">
             <div>
-              <img className="w-[468px] h-[560px]" src="https://i.ibb.co/RC16frr/Photo-9.png" alt="" srcset="" />
+              <img className="w-[468px] h-[560px]" src="https://i.ibb.co/RC16frr/Photo-9.png" alt="" srcSet="" />
             </div>
             <div className="bg-white p-5 mx-5">
               <h3 className="font-bold font-sans text-[#1c1c1c] text-[2rem]">Book an appoinment</h3>

@@ -1,6 +1,6 @@
 import React from "react";
-import "./ProfessionalDoctors.css";
 import { Link } from "react-router-dom";
+import "./ProfessionalDoctors.css";
 
 const doctors = [
   {
@@ -120,8 +120,8 @@ const ProfessionalDoctors = () => {
                                     fill="none"
                                   >
                                     <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
+                                      fillRule="evenodd"
+                                      clipRule="evenodd"
                                       d="M23.9707 11.181C23.9707 5.23259 18.8214 0.409424 12.4707 0.409424C6.12003 0.409424 0.970703 5.23259 0.970703 11.181C0.970703 16.5572 5.17539 21.0134 10.6738 21.8223V14.2956H7.75314V11.181H10.6738V8.80789C10.6738 6.10874 12.3911 4.61659 15.0176 4.61659C16.276 4.61659 17.5923 4.82721 17.5923 4.82721V7.47827H16.1415C14.7137 7.47827 14.2671 8.30826 14.2671 9.16133V11.181H17.4563L16.947 14.2956H14.2676V21.8232C19.766 21.0149 23.9707 16.5586 23.9707 11.181Z"
                                       fill="white"
                                     />
@@ -155,15 +155,15 @@ const ProfessionalDoctors = () => {
                                     stroke="currentColor"
                                   >
                                     <path
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      stroke-width="2"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
                                       d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                                     />
                                     <path
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      stroke-width="2"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
                                       d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
                                     />
                                   </svg>

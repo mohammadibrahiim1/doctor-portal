@@ -1,7 +1,7 @@
 import React from "react";
-import { useGetArticlesQuery } from "../../redux/features/api/articlesApi/articleApi";
 import { FaXmark } from "react-icons/fa6";
 import ArticlesCard from "../../Components/ArticlesCard/ArticlesCard";
+import { useGetArticlesQuery } from "../../redux/features/api/articlesApi/articleApi";
 
 const Blog = () => {
   const { data } = useGetArticlesQuery();
@@ -44,7 +44,7 @@ const Blog = () => {
             </div>
           </div>
           <div>
-            <img className="w-[935px] h-[449px] " src="https://i.ibb.co/nRBzGfZ/Photo-19.png" alt="" srcset="" />
+            <img className="w-[935px] h-[449px] " src="https://i.ibb.co/nRBzGfZ/Photo-19.png" alt="" srcSet="" />
           </div>
         </div>
 
@@ -53,7 +53,7 @@ const Blog = () => {
         <div className="modal ">
           <div className="modal-box bg-[#DCEDFE] rounded-none max-w-5xl flex justify-center items-center gap-[20px] ">
             <div>
-              <img className="w-[468px] h-[560px]" src="https://i.ibb.co/RC16frr/Photo-9.png" alt="" srcset="" />
+              <img className="w-[468px] h-[560px]" src="https://i.ibb.co/RC16frr/Photo-9.png" alt="" srcSet="" />
             </div>
             <div className="bg-white p-5 mx-5">
               <h3 className="font-bold font-sans text-[#1c1c1c] text-[2rem]">Book an appoinment</h3>

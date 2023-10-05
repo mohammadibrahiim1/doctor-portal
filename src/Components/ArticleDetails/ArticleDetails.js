@@ -16,7 +16,7 @@ const ArticleDetails = () => {
         <div className="w-[1200px] mx-auto flex flex-col justify-center items-center ">
           <button className="lato text-center">{published_date}</button>
           <h1 className="text-4xl text-[#1c1c1c] font-semibold font-sans py-5 ">{blog_title}</h1>
-          <img className="w-[1200px] h-[550px] mx-auto" src={image} alt="" srcset="" />
+          <img className="w-[1200px] h-[550px] mx-auto" src={image} alt="" srcSet="" />
         </div>
         <div>
           {doctors?.map((dc) => (
@@ -54,8 +54,8 @@ const ArticleDetails = () => {
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M23.2582 11.5648C23.2582 5.61638 18.1088 0.793213 11.7582 0.793213C5.40751 0.793213 0.258179 5.61638 0.258179 11.5648C0.258179 16.941 4.46287 21.3972 9.9613 22.206V14.6794H7.04061V11.5648H9.9613V9.19167C9.9613 6.49253 11.6786 5.00038 14.3051 5.00038C15.5634 5.00038 16.8798 5.211 16.8798 5.211V7.86206H15.4289C14.0012 7.86206 13.5545 8.69205 13.5545 9.54512V11.5648H16.7437L16.2345 14.6794H13.5551V22.207C19.0535 21.3987 23.2582 16.9424 23.2582 11.5648Z"
                         fill="#0152A8"
                       />
@@ -98,7 +98,7 @@ const ArticleDetails = () => {
           </div>
         </div>
         <div className="my-5">
-          <img className="w-[590px]" src={image} alt="" srcset="" />
+          <img className="w-[590px]" src={image} alt="" srcSet="" />
           <p className="text-sm font-sans text-[#545454] text-center">doctor with patient </p>
         </div>
         <div>
@@ -167,8 +167,8 @@ const ArticleDetails = () => {
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M23.2582 11.5648C23.2582 5.61638 18.1088 0.793213 11.7582 0.793213C5.40751 0.793213 0.258179 5.61638 0.258179 11.5648C0.258179 16.941 4.46287 21.3972 9.9613 22.206V14.6794H7.04061V11.5648H9.9613V9.19167C9.9613 6.49253 11.6786 5.00038 14.3051 5.00038C15.5634 5.00038 16.8798 5.211 16.8798 5.211V7.86206H15.4289C14.0012 7.86206 13.5545 8.69205 13.5545 9.54512V11.5648H16.7437L16.2345 14.6794H13.5551V22.207C19.0535 21.3987 23.2582 16.9424 23.2582 11.5648Z"
                           fill="#0152A8"
                         />
@@ -223,8 +223,8 @@ const ArticleDetails = () => {
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M23.2582 11.5648C23.2582 5.61638 18.1088 0.793213 11.7582 0.793213C5.40751 0.793213 0.258179 5.61638 0.258179 11.5648C0.258179 16.941 4.46287 21.3972 9.9613 22.206V14.6794H7.04061V11.5648H9.9613V9.19167C9.9613 6.49253 11.6786 5.00038 14.3051 5.00038C15.5634 5.00038 16.8798 5.211 16.8798 5.211V7.86206H15.4289C14.0012 7.86206 13.5545 8.69205 13.5545 9.54512V11.5648H16.7437L16.2345 14.6794H13.5551V22.207C19.0535 21.3987 23.2582 16.9424 23.2582 11.5648Z"
                   fill="#0152A8"
                 />

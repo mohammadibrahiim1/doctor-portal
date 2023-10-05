@@ -1,6 +1,6 @@
 import React from "react";
-import { useGetServiceByIdQuery } from "../../redux/features/api/servicesApi/servicesApi";
 import { useParams } from "react-router-dom";
+import { useGetServiceByIdQuery } from "../../redux/features/api/servicesApi/servicesApi";
 
 const ServiceDetails = () => {
   const { id } = useParams();
@@ -11,11 +11,11 @@ const ServiceDetails = () => {
   return (
     <div>
       <div>
-        <img className=" w-[1744px] mx-auto my-12" src={"https://i.ibb.co/gvqKrkx/Photo-12.png"} alt="" srcset="" />
+        <img className=" w-[1744px] mx-auto my-12" src={"https://i.ibb.co/gvqKrkx/Photo-12.png"} alt="" srcSet="" />
       </div>
       <div className="w-[590px] mx-auto">
         <div className="flex gap-1">
-          <img className="" src={icon} alt="" srcset="" />
+          <img className="" src={icon} alt="" srcSet="" />
           <p className="text-gray-900 font-sans font-semibold text-xl">{service_name}</p>
         </div>
         <div>
@@ -36,7 +36,7 @@ const ServiceDetails = () => {
           </div>
         </div>
         <div className="my-5">
-          <img className="w-[590px]" src={image} alt="" srcset="" />
+          <img className="w-[590px]" src={image} alt="" srcSet="" />
           <p className="text-sm font-sans text-[#545454] text-center">doctor with patient </p>
         </div>
         <div>

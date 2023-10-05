@@ -1,14 +1,9 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { createUser, googleSignIn } from "../../redux/features/auth/authSlice";
-import toast from "react-hot-toast";
-// import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm, useWatch } from "react-hook-form";
-import { data } from "autoprefixer";
-import { setDate } from "date-fns";
-// import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { createUser, googleSignIn } from "../../redux/features/auth/authSlice";
 
 const Signup = () => {
   const { register, handleSubmit, reset, control } = useForm();
@@ -37,12 +32,6 @@ const Signup = () => {
     }
   }, [password, confirmPassword]);
 
-  // useEffect(() => {
-  //   if (email) {
-
-  //   }
-  // }, [email])
-
   useEffect(() => {
     if (isError) {
       toast.error(error);
@@ -58,18 +47,6 @@ const Signup = () => {
       })
     );
     reset();
-    // e.preventDefault();
-    // const form = e.target;
-    // const name = form.name.value;
-    // const email = form.email.value;
-    // const password = form.password.value;
-    // console.log(email, password, name);
-    // dispatch(
-    //   createUser({
-    //     email,
-    //     password,
-    //   })
-    // );
   };
 
   const handleGoogleSignIn = () => {
@@ -88,7 +65,7 @@ const Signup = () => {
                 className="h-[390px] w-[390px] mx-5 "
                 src="https://i.ibb.co/JHn3VVh/copy-1illistration-1.png"
                 alt=""
-                srcset=""
+                srcSet=""
               />
             </div>
 
@@ -114,9 +91,7 @@ const Signup = () => {
                 <div className="text-[12px] font-semibold font-sans">or</div>
                 <div className="w-[300px] h-[1px] bg-[#686868]"></div>
               </div>
-              {/* <p className="text-center text-[#32403B] text-[19px] font-sans font-semibold w-[400px] mx-auto">
-                Already Have an Account? <Link to={"/login"}>Login</Link>
-              </p> */}
+
               <div className="flex justify-center items-center gap-5">
                 <div className="flex flex-col items-start">
                   <label
@@ -307,91 +282,6 @@ const Signup = () => {
               </div>
             </form>
           </div>
-
-          {/* <form
-              className="card-body"
-              onSubmit={submit}
-            >
-
-              <div className="form-control">
-                <input
-
-                  type="text"
-                  name="name"
-                  placeholder="your name"
-                  // value={name}
-                  className="input input-sm w-full input-bordered text-lg capitalize font-sans h-[64px]"
-                // onChange={e => setName(e.target.value)}
-                />
-              </div>
-              <div className="form-control">
-                <input
-
-                  placeholder="email"
-                  type="email"
-                  name="email"
-                  // value={email}
-                  className="input input-sm w-full input-bordered text-lg  font-sans h-[64px] my-4"
-                // onChange={e => setEmail(e.target.value)}
-                />
-              </div>
-              <div className="form-control">
-
-                <input
-
-                  type="password"
-                  name="password"
-                  // value={password}
-                  placeholder="password"
-                  className="input input-sm w-full input-bordered text-lg capitalize font-sans h-[64px]"
-                // onChange={e => setPassword(e.target.value)}
-
-                />
-
-              </div>
-              <div className="">
-                <button
-                  className=" capitalize font-sans btn-primary rounded-xl text-white text-[30px] bg-[#84C7AE] h-[60px] w-[391px] flex justify-center items-center mx-auto hover:bg-[#84c7ae] my-4"
-                  type="submit"
-                >
-                  create account
-                </button>
-              </div>
-
-              <div className="flex flex-col w-full">
-                <div
-                  className="divider"
-                  style={{
-                    fontSize: "14px",
-                    marginTop: "0.2rem",
-                    marginBottom: "0.2rem",
-                  }}
-                >
-                  OR
-                </div>
-              </div>
-
-              <div className="flex justify-center items-center gap-5">
-                <button
-                  className=" capitalize font-sans btn-primary rounded-xl text-white text-[13px] bg-[#84C7AE] h-[45px] flex justify-center items-center mx-auto hover:bg-[#84c7ae] my-4 px-5 "
-                  onClick={handleGoogleSignIn}
-                  type="submit"
-                >
-                  continue with google
-                </button>
-                <button
-                  className=" capitalize font-sans btn-primary rounded-xl text-white text-[13px] bg-[#84C7AE] h-[45px] flex justify-center items-center mx-auto hover:bg-[#84c7ae] my-4 px-5"
-                >
-                  continue with facebook
-                </button>
-                <button
-                  className=" capitalize font-sans btn-primary rounded-xl text-white text-[13px] bg-[#84C7AE] h-[45px] flex justify-center items-center mx-auto hover:bg-[#84c7ae] my-4 px-5"
-                >
-                  continue with Apple
-                </button>
-
-              </div>
-            </form> */}
         </div>
       </div>
     </div>

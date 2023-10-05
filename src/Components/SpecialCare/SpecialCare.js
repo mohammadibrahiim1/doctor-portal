@@ -43,8 +43,8 @@ const SpecialCare = () => {
           </button>
         </div>
         <div className="flex  items-center gap-5">
-          <img src="https://i.ibb.co/qs82VwW/Photo-1.png" alt="" srcset="" />
-          <img src="https://i.ibb.co/syNjwx1/Photo-2.png" alt="" srcset="" />
+          <img src="https://i.ibb.co/qs82VwW/Photo-1.png" alt="" srcSet="" />
+          <img src="https://i.ibb.co/syNjwx1/Photo-2.png" alt="" srcSet="" />
         </div>
       </div>
     </div>

@@ -48,7 +48,7 @@ const ContactUs = () => {
 
                 <div>
                   <div className="border py-[61px] px-[91px] text-center">
-                    <img className="w-[85px] h-[85px] mx-auto" src={contact.icon} alt="" srcset="" />
+                    <img className="w-[85px] h-[85px] mx-auto" src={contact.icon} alt="" srcSet="" />
                     <h1 className="text-[20px] font-semibold text-[#000] font-sans py-2" >{contact.title}</h1>
                     <h1 className="text-[13px] font-semibold text-[#7c7c7c] font-sans">{contact.location}</h1>
                   </div>

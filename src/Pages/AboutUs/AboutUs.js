@@ -33,7 +33,7 @@ const AboutUs = () => {
       <section>
         <header>
           <div className="container mx-auto py-5">
-            <img src="https://i.ibb.co/CtNtVbT/Photo-7.png" alt="" srcset="" />
+            <img src="https://i.ibb.co/CtNtVbT/Photo-7.png" alt="" srcSet="" />
           </div>
 
           <div className="w-[550px] mx-auto ">
@@ -46,7 +46,7 @@ const AboutUs = () => {
               your issue. Includes, but is not limit, your work and home stressors.
             </p>
           </div>
-          <img className="flex mx-auto pt-5" src="https://i.ibb.co/LzZDxL1/Photo-8.png" alt="" srcset="" />
+          <img className="flex mx-auto pt-5" src="https://i.ibb.co/LzZDxL1/Photo-8.png" alt="" srcSet="" />
         </header>
 
         <div className="w-[1200px] grid grid-cols-2 mx-auto justify-center gap-[10.688rem] py-[130px]">
@@ -119,7 +119,7 @@ const AboutUs = () => {
           {values.map((value) => (
             <>
               <div className="border px-[40px] py-[30px]">
-                <img className="w-[124px] h-[124px] mx-auto " src={value.image} alt="" srcset="" />
+                <img className="w-[124px] h-[124px] mx-auto " src={value.image} alt="" srcSet="" />
                 <div className="text-center">
                   <h1 className="text-[#1c1c1c] text-[1.25rem] font-semibold font-sans py-4">{value.title}</h1>
                   <p className="text-sm font-semibold text-[#545454] font-sans">
@@ -143,7 +143,7 @@ const AboutUs = () => {
       <div className="modal ">
         <div className="modal-box bg-[#DCEDFE] rounded-none max-w-5xl flex justify-center items-center gap-[20px] ">
           <div>
-            <img className="w-[468px] h-[560px]" src="https://i.ibb.co/RC16frr/Photo-9.png" alt="" srcset="" />
+            <img className="w-[468px] h-[560px]" src="https://i.ibb.co/RC16frr/Photo-9.png" alt="" srcSet="" />
           </div>
           <div className="bg-white p-5 mx-5">
             <h3 className="font-bold font-sans text-[#1c1c1c] text-[2rem]">Book an appoinment</h3>

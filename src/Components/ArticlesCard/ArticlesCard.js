@@ -7,7 +7,7 @@ const ArticlesCard = ({ article }) => {
     <div>
       <div className="w-[360px] bg-[#F1F1F1]">
         <div className="flex flex-col items-center ">
-          <img className="w-[398px] h=-[249px]" src={image} alt="" srcset="" />
+          <img className="w-[398px] h=-[249px]" src={image} alt="" srcSet="" />
 
           <div className=" py-[23px] px-5">
             <button className="lato">{published_date}</button>

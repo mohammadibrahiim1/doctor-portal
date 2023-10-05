@@ -1,20 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createUser, googleSignIn } from "../../redux/features/auth/authSlice";
 import toast from "react-hot-toast";
 // import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
+import { data } from "autoprefixer";
+import { setDate } from "date-fns";
 // import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset, control } = useForm();
   const navigate = useNavigate();
-  // const dispatch = useDispatch();
   const dispatch = useDispatch();
   const { isError, error } = useSelector((state) => state.auth);
   // const navigate = useNavigate()
+
+  const password = useWatch({ control, name: "password" });
+  const confirmPassword = useWatch({ control, name: "confirmPassword" });
+
+  const [disabled, setDisabled] = useState(true);
+  console.log(disabled);
+
+  useEffect(() => {
+    if (
+      password !== undefined &&
+      password !== "" &&
+      confirmPassword !== undefined &&
+      confirmPassword !== "" &&
+      password === confirmPassword
+    ) {
+      return setDisabled(false);
+    } else {
+      setDisabled(true);
+    }
+  }, [password, confirmPassword]);
 
   // useEffect(() => {
   //   if (email) {
@@ -28,12 +49,12 @@ const Signup = () => {
     }
   }, [error, isError]);
 
-  const onSubmit = ({ email, password }) => {
-    console.log(email, password);
+  const submit = (data) => {
+    console.log(data);
     dispatch(
       createUser({
-        email,
-        password,
+        email: data.email,
+        password: data.password,
       })
     );
     reset();
@@ -53,22 +74,34 @@ const Signup = () => {
 
   const handleGoogleSignIn = () => {
     dispatch(googleSignIn());
+    navigate("/appointment");
     toast.success(`successfully sign in with google`);
   };
 
   return (
     <div>
       <div className="bg-[#B5B5B5]">
-        {/* <div className="hero-content flex-col lg:flex-row-reverse"> */}
-        <div>
-          <div className="flex justify-evenly items-center py-[200px]">
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <h2 className=" text-[25px] text-[#000] font-sans font-semibold py-[49px]">
+        <div className="w-[1200px] mx-auto py-[120px]">
+          <div className="  flex justify-between items-center">
+            <div>
+              <img
+                className="h-[390px] w-[390px] mx-5 "
+                src="https://i.ibb.co/JHn3VVh/copy-1illistration-1.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+
+            <form onSubmit={handleSubmit(submit)}>
+              <h2 className=" text-[25px] text-[#000] font-sans font-semibold pb-[49px]">
                 Sign up to Pharma
               </h2>
 
               <div className="flex gap-5 items-center">
-                <button className="w-[320px] h-[50px] rounded-[5px] text-white font-sans bg-[#F44242]">
+                <button
+                  className="w-[320px] h-[50px] rounded-[5px] text-white font-sans bg-[#F44242]"
+                  onClick={handleGoogleSignIn}
+                >
                   Signup with Google
                 </button>
                 <button className="w-[320px] h-[50px] rounded-[5px] text-white font-sans bg-[#3B5998]">
@@ -146,12 +179,11 @@ const Signup = () => {
                     Phone
                   </label>
                   <input
-                    type="phone"
+                    type="text"
                     id="phone"
                     placeholder="Your Phone Number"
                     {...register("phone", {
                       required: true,
-                      pattern: /^\S+@\S+$/i,
                     })}
                     className="block w-[320px] h-[45px] rounded-md border-1 py-3 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
@@ -172,53 +204,69 @@ const Signup = () => {
                     placeholder="Password"
                     {...register("password", {
                       required: true,
-                      pattern: /^\S+@\S+$/i,
                     })}
                     className="block w-[320px] h-[45px] rounded-md border-1 py-3 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
-                <div className="px-5">
-                  <h2 className="font-semibold text-[#4b4a4a] font-sans">
-                    Gender :{" "}
-                  </h2>
-                  <div className="flex items-center gap-5 ">
-                    <label>
-                      <div className="font-sans  flex items-center text-neutral">
-                        <input
-                          className="radio radio-xs radio-accent mr-1"
-                          type="radio"
-                          id="male"
-                          value="Male"
-                          {...register("male")}
-                        />
-                        Male
-                      </div>
-                    </label>
-                    <label>
-                      <div className="font-sans  flex items-center text-neutral">
-                        <input
-                          className="radio radio-xs radio-accent mr-1"
-                          type="radio"
-                          id="female"
-                          value="Female"
-                          {...register("female")}
-                        />
-                        Female
-                      </div>
-                    </label>
-                    <label>
-                      <div className="font-sans  flex items-center text-neutral">
-                        <input
-                          className="radio radio-xs radio-accent mr-1"
-                          type="radio"
-                          id="shemale"
-                          value="Shemale"
-                          {...register("shemale")}
-                        />
-                        Shemale
-                      </div>
-                    </label>
-                  </div>
+                <div className="flex flex-col items-start">
+                  <label
+                    htmlFor="Confirm password"
+                    className="font-sans text-[#4b4a4a] font-semibold py-2"
+                  >
+                    Confirm Password
+                  </label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    placeholder="Confirm Password"
+                    {...register("confirmPassword", {
+                      required: true,
+                    })}
+                    className="block w-[320px] h-[45px] rounded-md border-1 py-3 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div className="py-5">
+                <h2 className="font-semibold text-[#4b4a4a] font-sans">
+                  Gender :{" "}
+                </h2>
+                <div className="flex items-center gap-5 ">
+                  <label>
+                    <div className="font-sans  flex items-center text-neutral">
+                      <input
+                        className="radio radio-xs radio-accent mr-1"
+                        type="radio"
+                        id="gender"
+                        value="male"
+                        {...register("gender")}
+                      />
+                      Male
+                    </div>
+                  </label>
+                  <label>
+                    <div className="font-sans  flex items-center text-neutral">
+                      <input
+                        className="radio radio-xs radio-accent mr-1"
+                        type="radio"
+                        id="gender"
+                        value="female"
+                        {...register("gender")}
+                      />
+                      Female
+                    </div>
+                  </label>
+                  <label>
+                    <div className="font-sans  flex items-center text-neutral">
+                      <input
+                        className="radio radio-xs radio-accent mr-1"
+                        type="radio"
+                        id="gender"
+                        value="shemale"
+                        {...register("gender")}
+                      />
+                      Shemale
+                    </div>
+                  </label>
                 </div>
               </div>
 
@@ -240,31 +288,24 @@ const Signup = () => {
 
               <div className="flex justify-between items-center gap-5">
                 <button
-                  className="bg-[#0152A8] w-[320px] text-white font-sans font-semibold  py-3 cursor-pointer"
+                  className="bg-[#0152A8] w-[320px] text-white font-sans font-semibold disabled:bg-red-200 py-3 cursor-pointer"
                   type="submit"
+                  control={control}
+                  disabled={disabled}
                 >
                   Signup
                 </button>
                 <p className="font-sans font-semibold text-[#686868]">
-                  Don't have an account?{" "}
+                  Already have an account?{" "}
                   <span
                     className="text-primary hover:underline cursor-pointer"
                     onClick={() => navigate("/signup")}
                   >
-                    Sign up
+                    Login
                   </span>
                 </p>
               </div>
             </form>
-
-            <div>
-              <img
-                className="h-[490px] w-[490px] pt-7"
-                src="https://i.ibb.co/JHn3VVh/copy-1illistration-1.png"
-                alt=""
-                srcset=""
-              />
-            </div>
           </div>
 
           {/* <form
@@ -354,7 +395,6 @@ const Signup = () => {
         </div>
       </div>
     </div>
-    // </div>
   );
 };
 

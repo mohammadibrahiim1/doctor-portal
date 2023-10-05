@@ -29,7 +29,10 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
         </header>
 
         <div className="w-[1200px] mx-auto bg-[#F1F1F1] relative bottom-24">
-          <form className="p-[200px]" onSubmit={handleSubmit(onSubmit)}>
+          <form
+            className="py-[100px] px-[200px]"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <div className="flex gap-3 items-center py-5 ">
               <input
                 type="text"

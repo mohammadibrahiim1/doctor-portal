@@ -7,9 +7,13 @@ import React from "react";
 // import { DayPicker } from "react-day-picker";
 // import { format } from "date-fns";
 import { useForm } from "react-hook-form";
+import { useGetDoctorsQuery } from "../../../redux/features/api/doctorsApi/doctorsApi";
 
 const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
   const [open, setOpen] = React.useState(1);
+  const { data } = useGetDoctorsQuery();
+  const doctors = data?.data;
+  console.log(doctors);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   const {
@@ -58,11 +62,11 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
                 className="input input-bordered border-[#DCDCDC] w-[490px] rounded my-2 font-sans"
                 {...register("Title", { required: true })}
               >
-                <option value="selected">Choose a Department</option>
-                <option value="M">Mr</option>
-                <option value="Mr">Mrs</option>
-                <option value="Mis">Miss</option>
-                <option value="D">Dr</option>
+                {doctors?.map((doctor) => (
+                  <>
+                    <option value={doctor.category}>{doctor?.category}</option>
+                  </>
+                ))}
               </select>
               <select
                 // name="selectedDepartment"
@@ -71,11 +75,11 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
               "
                 {...register("Title", { required: true })}
               >
-                <option value="selected">Choose Doctor</option>
-                <option value="M">Mr</option>
-                <option value="Mr">Mrs</option>
-                <option value="Mis">Miss</option>
-                <option value="D">Dr</option>
+                {doctors?.map((doctor) => (
+                  <>
+                    <option value="selected">{doctor?.name}</option>
+                  </>
+                ))}
               </select>
             </div>
 
@@ -108,11 +112,22 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
               "
                 {...register("Title", { required: true })}
               >
-                <option value="selected">Select Time</option>
-                <option value="Mr">Mr</option>
-                <option value="Mrs">Mrs</option>
+                {doctors?.map((doctor) => (
+                  <>
+                    <option>
+                      {doctor?.availability?.map((available) => (
+                        <div>
+                          <div value={available.slot}>
+                            {available.slot}
+                          </div>
+                        </div>
+                      ))}
+                    </option>
+                  </>
+                ))}
+                {/* 
                 <option value="Miss">Miss</option>
-                <option value="Dr">Dr</option>
+                <option value="Dr">Dr</option> */}
               </select>
             </div>
 

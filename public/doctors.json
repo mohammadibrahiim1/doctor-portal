@@ -7,12 +7,12 @@
     "category": "Cardiologist",
     "image": "https://i.ibb.co/mNM3GGJ/Photo-18.png",
     "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
-    "availability": {
-      "Monday": "8:30am - 5:30pm",
-      "Wednesday": "1:30pm - 7:30pm",
-      "Thursday": "10am - 8pm",
-      "Frdoctor_iday": "9am - 12pm"
-    },
+    "availability": [
+      { "slot": "8:30am - 5:30pm" },
+      { "slot": "1:30pm - 7:30pm" },
+      { "slot": "10am - 8pm" },
+      { "slot": "9am - 12pm" }
+    ],
     "phone": "416-486-1956",
     "address": {
       "street": "473 Dupont Street",
@@ -75,11 +75,13 @@
     "mail": "info@doctorate.com",
     "image": "https://i.ibb.co/drc1WhB/Photo-17.png",
     "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
-    "availability": {
-      "Monday": "9am - 5pm",
-      "Tuesday": "9am - 12pm",
-      "Frdoctor_iday": "9am - 12pm"
-    },
+    "availability": [
+      {
+        "slot": "9am - 5pm"
+      },
+      { "slot": "9am - 12pm" },
+      { "slot": "9am - 12pm" }
+    ],
     "phone": "416-486-1956",
     "address": {
       "street": "200 St. Clair Ave. West Suite 110",
@@ -108,12 +110,14 @@
     "gender": "F",
     "mail": "info@doctorate.com",
     "image": "https://i.ibb.co/YdGpS0h/Photo-16.png",
-    "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
-    "availability": {
-      "Monday": "10am - 2pm",
-      "Tuesday": "11am - 5pm",
-      "Wednesday": "10am - 5pm"
-    },
+    "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperative}s the efficiency.",
+    "availability": [
+      {
+        "slot": "10am }- 2pm"
+      },
+      { "slot": "11am - 5pm" },
+      { "slot": "10am - 5pm" }
+    ],
     "phone": "416-486-1956",
     "address": {
       "street": "200 St. Clair Ave. West Suite 110",
@@ -176,7 +180,13 @@
     "mail": "info@doctorate.com",
     "image": "https://i.ibb.co/19G53RY/Photo-15.png",
     "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
-    "availability": {},
+    "availability": [
+      {
+        "slot": "10am }- 2pm"
+      },
+      { "slot": "11am - 5pm" },
+      { "slot": "10am - 5pm" }
+    ],
     "phone": "647-722-2370",
     "address": {
       "street": "390 Steeles Avenue West",
@@ -194,6 +204,13 @@
     "category": "Orthopedic Surgeon",
     "image": "https://i.ibb.co/p1LtPXy/photo-13.png",
     "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
+    "availability": [
+      {
+        "slot": "10am - 2pm"
+      },
+      { "slot": "11am - 5pm" },
+      { "slot": "10am - 5pm" }
+    ],
     "phone": "647-722-2370",
     "address": {
       "street": "390 Steeles Avenue West",
@@ -224,6 +241,13 @@
     "image": "https://i.ibb.co/X72WBtd/Photo-14.png",
     "about": "Lorem Ipsum Capitalize on low hanging fruit to doctor_identify a ballpark value added activity to beta immersion along the information highway will close the loop on focusing solely on the bottom line rather than client-centric imperatives the efficiency.",
     "phone": "647-722-2370",
+    "availability": [
+      {
+        "slot": "10am - 2pm"
+      },
+      { "slot": "11am - 5pm" },
+      { "slot": "10am - 5pm" }
+    ],
     "address": {
       "street": "390 Steeles Avenue West",
       "city": "Vaughan",

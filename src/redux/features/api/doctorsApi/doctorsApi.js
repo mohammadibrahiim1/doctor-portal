@@ -12,7 +12,16 @@ const doctorApi = apiSlice.injectEndpoints({
         url: `/api/v1/doctor/${id}`,
       }),
     }),
+    getDoctorByCategory: builder.query({
+      query: (category) => ({
+        url: `/api/v1/doctors?category=${category}`,
+      }),
+    }),
   }),
 });
 
-export const { useGetDoctorsQuery, useGetDoctorByIdQuery } = doctorApi;
+export const {
+  useGetDoctorsQuery,
+  useGetDoctorByIdQuery,
+  useGetDoctorByCategoryQuery,
+} = doctorApi;

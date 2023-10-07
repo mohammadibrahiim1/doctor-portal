@@ -3,17 +3,41 @@ import {
   AccordionBody,
   AccordionHeader,
 } from "@material-tailwind/react";
-import React from "react";
+import React, { useState } from "react";
 // import { DayPicker } from "react-day-picker";
 // import { format } from "date-fns";
 import { useForm } from "react-hook-form";
-import { useGetDoctorsQuery } from "../../../redux/features/api/doctorsApi/doctorsApi";
+import {
+  useGetDoctorByCategoryQuery,
+  useGetDoctorsQuery,
+} from "../../../redux/features/api/doctorsApi/doctorsApi";
+
+// const options = [
+//   "Cardiologist",
+//   "Pediatrician",
+//   "Dermatologist",
+//   "Obstetrician",
+//   "Orthopedic Surgeon",
+//   "Orthopedic Surgeon",
+// ];
 
 const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
   const [open, setOpen] = React.useState(1);
+
+  const [selectedValue, setSelectedValue] = useState("");
+  console.log(selectedValue);
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
+
   const { data } = useGetDoctorsQuery();
   const doctors = data?.data;
   console.log(doctors);
+
+  const { data: doctorsByCategory } =
+    useGetDoctorByCategoryQuery(selectedValue);
+  console.log(doctorsByCategory);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   const {
@@ -23,6 +47,7 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
   } = useForm();
   const onSubmit = (data) => console.log(data);
   console.log(errors);
+
   return (
     <div>
       <section className="py-5">
@@ -59,23 +84,44 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
             </div>
             <div className="flex items-center gap-3">
               <select
+                value={selectedValue}
+                onChange={handleChange}
                 className="input input-bordered border-[#DCDCDC] w-[490px] rounded my-2 font-sans"
-                {...register("Title", { required: true })}
+                // {...register('category', { required: true })}
+              >
+                <option value="">Select a Category</option>
+                {doctors?.map((item) => (
+                  <option key={item._id} value={item?.category}>
+                    {item?.category}
+                  </option>
+                ))}
+              </select>
+              {/* <select
+                value={selectedValue}
+                // onClick={handleChange}
+                className="input input-bordered border-[#DCDCDC] w-[490px] rounded my-2 font-sans"
+                {...register(`${selectedValue}`, { required: true })}
               >
                 {doctors?.map((doctor) => (
                   <>
-                    <option value={doctor.category}>{doctor?.category}</option>
+                    <option
+                      key={doctor._id}
+                      onClick={() => setSelectedValue(doctor?.category)}
+                      value={doctor?.category}
+                    >
+                      <p>{doctor?.category}</p>
+                    </option>
                   </>
                 ))}
-              </select>
+              </select> */}
               <select
                 // name="selectedDepartment"
                 // defaultValue="Choose a Department"
                 className="input input-bordered border-[#DCDCDC] w-[490px] rounded my-2 font-sans
               "
-                {...register("Title", { required: true })}
+                // {...register("Title", { required: true })}
               >
-                {doctors?.map((doctor) => (
+                {doctorsByCategory?.data?.map((doctor) => (
                   <>
                     <option value="selected">{doctor?.name}</option>
                   </>
@@ -110,24 +156,22 @@ const AppointMentBanner = ({ selectedDate, setSelectedDate }) => {
               <select
                 className="input input-bordered border-[#DCDCDC] w-[320px]  rounded my-2 font-sans
               "
-                {...register("Title", { required: true })}
+                // {...register("Title", { required: true })}
               >
-                {doctors?.map((doctor) => (
+                {doctorsByCategory?.data?.map((doctor) => (
                   <>
                     <option>
                       {doctor?.availability?.map((available) => (
                         <div>
-                          <div value={available.slot}>
+                          <option value={available.slot}>
                             {available.slot}
-                          </div>
+                          </option>
+                          <br />
                         </div>
                       ))}
                     </option>
                   </>
                 ))}
-                {/* 
-                <option value="Miss">Miss</option>
-                <option value="Dr">Dr</option> */}
               </select>
             </div>
 

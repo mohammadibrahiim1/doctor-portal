@@ -5,24 +5,41 @@ import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase/firebase.config";
 import { logout } from "../../redux/features/auth/authSlice";
 import "./Header.css";
+import { useState } from "react";
 
 const Header = () => {
   const { email } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-
   const handleLogOut = () => {
     signOut(auth).then(() => {
       dispatch(logout());
-      navigate('/login')
-    })
+      navigate("/login");
+    });
+  };
 
-  }
+  const [isScrolled, setIsScrolled] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 80) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
+
   return (
     <div>
-      <section>
-        <div className=" w-[1200px] mx-auto navbar bg-base-100">
+      <section
+        className={
+          isScrolled
+            ? " bg-[#F7FCFE]  fixed top-0 right-0 left-0"
+            : "fixed top-0 left-0 right-0 z-3"
+        }
+      >
+        <div className="w-[1200px] mx-auto navbar">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -33,7 +50,12 @@ const Header = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
                 </svg>
               </label>
               <ul
@@ -65,7 +87,12 @@ const Header = () => {
             </div>
             <Link to="/" className="normal-case text-xl">
               <div className="flex justify-center items-center gap-1">
-                <img src="https://i.ibb.co/jRpnpcB/Icon.png" alt="" srcSet="" className="h-10 w-10  " />{" "}
+                <img
+                  src="https://i.ibb.co/jRpnpcB/Icon.png"
+                  alt=""
+                  srcSet=""
+                  className="h-10 w-10  "
+                />{" "}
                 <p className="siteName font-sans font-semibold">Pharma</p>
               </div>
             </Link>
@@ -106,15 +133,27 @@ const Header = () => {
             </ul>
           </div>
           <div className="navbar-end flex justify-center  items-center gap-8 ">
-            <Link to="/appointment" className="btn btn-secondary px-8 font-sans rounded-none">
+            <Link
+              to="/appointment"
+              className="btn btn-secondary px-8 font-sans rounded-none"
+            >
               Appointment
             </Link>
-            {email ? <Link onClick={handleLogOut} className="btn btn-secondary px-8 font-sans rounded-none" >
-              Logout
-            </Link> :
-              <Link to={'/signup'} className="btn btn-secondary px-8 font-sans rounded-none" >
+            {email ? (
+              <Link
+                onClick={handleLogOut}
+                className="btn btn-secondary px-8 font-sans rounded-none"
+              >
+                Logout
+              </Link>
+            ) : (
+              <Link
+                to={"/signup"}
+                className="btn btn-secondary px-8 font-sans rounded-none"
+              >
                 Signup
-              </Link>}
+              </Link>
+            )}
           </div>
         </div>
       </section>

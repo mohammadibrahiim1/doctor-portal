@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useForm, useWatch } from "react-hook-form";
 import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { createUser, googleSignIn } from "../../redux/features/auth/authSlice";
 
 const Signup = () => {
@@ -57,8 +57,8 @@ const Signup = () => {
 
   return (
     <div>
-      <div className="bg-[#B5B5B5]">
-        <div className="w-[1200px] mx-auto py-[120px]">
+      <div className="bg-[#F7FCFE]">
+        <div className="w-[1200px] mx-auto py-[50px]">
           <div className="  flex justify-between items-center">
             <div>
               <img
@@ -263,7 +263,7 @@ const Signup = () => {
 
               <div className="flex justify-between items-center gap-5">
                 <button
-                  className="bg-[#0152A8] w-[320px] text-white font-sans font-semibold disabled:bg-red-200 py-3 cursor-pointer"
+                  className="bg-[#0152A8] w-1/2 text-white font-sans font-semibold  py-3 cursor-pointer"
                   type="submit"
                   control={control}
                   disabled={disabled}
@@ -274,7 +274,7 @@ const Signup = () => {
                   Already have an account?{" "}
                   <span
                     className="text-primary hover:underline cursor-pointer"
-                    onClick={() => navigate("/signup")}
+                    onClick={() => navigate("/login")}
                   >
                     Login
                   </span>
